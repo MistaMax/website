@@ -211,20 +211,17 @@ for(var i = 0; i < keys.length; i++) {
 			var rpar=0;
 			var condition='';
 			// Replace all instances of abs with Math.abs and sqrt respectively. This can be done easily using regex and the 'g' tag which will replace all instances of the matched character/substring
-				for(var a=0;a<equation.length;a++)
-				{
+				for(var a=0;a<equation.length;a++){
 					if(equation[a]=='(')lpar++;
 					if(equation[a]==')')rpar++;
 				}
-				if(lpar!=rpar)
-				{
+				if(lpar!=rpar){
 					error=true;
 					if(lpar>rpar)condition="too many (";
 					if(lpar<rpar)condition="too many )";
 				}
 					
-			if(error==false)
-			{
+			if(error==false){
 			equation = equation.replace(/abs/g, 'Math.abs').replace(/sqrt/g, 'Math.sqrt');
 			
 			// Final thing left to do is checking the last character of the equation. If it's an operator or a decimal, remove it
@@ -236,19 +233,16 @@ for(var i = 0; i < keys.length; i++) {
 				
 			decimalAdded = false;
 			}
-			else
-			{
+			else{
 				var displayError="Error: ";
 				displayError+=condition;
 				window.alert(displayError);
 			}
 		}
-		else if(btnVal=="")
-		{
+		else if(btnVal==""){
 			
 		}
-		else if(btnVal=="")
-		{
+		else if(btnVal==""){
 			
 		}
 		
