@@ -13,14 +13,16 @@
 }
 
 #content{
-    /*position: relative;*/
+    position: relative;
     left:20%;
     width:60%;
     background-color: white;
-    fill-opacity: 50%;
+    opacity: 50%;
     align-content: center;
     height: 100%;
-    top:100%;
+    top:50%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 body{
