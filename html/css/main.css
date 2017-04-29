@@ -1,14 +1,16 @@
-@charset "utf-8"
+@charset "utf-8";
 /* CSS Document*/
-div #menu{
-
-}
+/*div #menu{
+}*/
 
 div #login{
-
+    float: right;
+    text-align: right;
+    font-family: Segoe UI Light;
+    z-index: 5000;
 }
 
-body{
+/*body{
     left:20%;
     right:20%;
-}
+}*/
