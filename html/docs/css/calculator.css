@@ -1,0 +1,93 @@
+@charset "utf-8";
+.calculator
+{
+	width:auto;
+	background-color:#333;
+	padding:5px;
+}
+.calculatorActive
+{
+	background-color:#333;
+	padding:5px;
+}
+table.cal
+{
+	display:none;
+}
+table.calActive
+{
+	display:inline;
+	padding:5px;
+}
+.calButton:hover
+{
+	color:#666;
+	background-color:#202020;
+}
+.calButton
+{
+	background-color:#666;
+	color:#202020;
+	vertical-align:central;
+	text-align:center;
+	width:25px;
+	height:20px;
+	font-size:20px;
+}
+#calInput
+{
+	background-color:#555;
+	color:#202020;
+	font-size:20px;
+}
+.calInput
+{
+background-color:#555;
+	color:#202020;
+	font-size:20px;
+}
+.clear
+{
+	background-color:#666;
+	color:#202020;
+	vertical-align:central;
+	text-align:center;
+	width:25px;
+	height:20px;
+	font-size:20px;
+}
+.clear:hover
+{
+	color:#666;
+	background-color:#202020;
+}
+.operator
+{
+	background-color:#666;
+	color:#202020;
+	vertical-align:central;
+	text-align:center;
+	width:25px;
+	height:20px;
+	font-size:20px;
+}
+.operator:hover
+{
+	color:#666;
+	background-color:#202020;
+}
+.eval
+{
+	background-color:#666;
+	color:#202020;
+	vertical-align:central;
+	text-align:center;
+	width:25px;
+	height:20px;
+	font-size:20px;
+}
+.eval:hover
+{
+	color:#666;
+	background-color:#202020;
+}

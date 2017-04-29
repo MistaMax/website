@@ -1,0 +1,436 @@
+@charset "utf-8";
+/* CSS Document */
+.mobileCheck
+{
+	display:none;
+}
+.volume
+{
+	font-weight:bold;
+}
+.play
+{
+	cursor:pointer;
+	font-weight:bold;
+}
+#music
+{
+	border-top:1px solid rgba(0,0,0,0.25);
+}
+.canvass
+{
+	transition-property:opacity,visibility,display;
+	transition-duration:2s;
+	-o-transition-property:opacity,visibility,display;
+	-o-transition-duration:2s;
+	-webkit-transition-property:opacity,visibility,display;
+	-webkit-transition-duration:2s;
+	-moz-transition-property:opacity,visibility,display;
+	-moz-transition-duration:2s;
+	-ms-transition-property:opacity,visibility,display;
+	-ms-transition-duration:2s;
+	-moz-opacity:1;
+	width:100%;
+	height:100%;
+	border:none;
+	opacity:100%;
+	margin:0;
+	padding:0;
+	position:absolute;
+	background-color:rgba(16,16,16,1);
+	opacity:1;
+	display:block;
+	visibility:visible;
+}
+.canvasHidden
+{
+	transition-property:opacity,visibility,display;
+	transition-duration:2s;
+	-o-transition-property:opacity,visibility,display;
+	-o-transition-duration:2s;
+	-webkit-transition-property:opacity,visibility,display;
+	-webkit-transition-duration:2s;
+	-moz-transition-property:opacity,visibility,display;
+	-moz-transition-duration:2s;
+	-ms-transition-property:opacity,visibility,display;
+	-ms-transition-duration:2s;
+	-moz-opacity:0;
+	width:100%;
+	height:100%;
+	border:none;
+	margin:0;
+	padding:0;
+	float:none;
+	position:absolute;
+	background-color:rgba(16,16,16,0);
+	opacity:100%;
+	display:none;
+	visibility:hidden;
+	opacity:0;
+}
+header.main
+{transition-property:color;
+	transition-duration:2s;
+	-o-transition-property:color;
+	-o-transition-duration:2s;
+	-webkit-transition-property:color;
+	-webkit-transition-duration:2s;
+	-moz-transition-property:color;
+	-moz-transition-duration:2s;
+	-ms-transition-property:color;
+	-ms-transition-duration:2s;
+	text-align:left;
+	color:#FF0;
+	font-size:50px;
+	word-break:keep-all;
+	visibility:inline;
+	z-index:2009;
+	margin: 0px;
+padding: 0px; 
+border: 0px;
+font-family:Segoe UI Light;
+}
+header.mainMenu
+{
+	transition-property:color,height;
+	transition-duration:2s;
+	-o-transition-property:color;
+	-o-transition-duration:2s;
+	-webkit-transition-property:color,height;
+	-webkit-transition-duration:2s;
+	-moz-transition-property:color,height;
+	-moz-transition-duration:2s;
+	-ms-transition-property:color,height;
+	-ms-transition-duration:2s;
+	text-align:left;
+	color:rgba(1000,1000,1000,1.0);
+	font-size:50px;
+	word-break:keep-all;
+	visibility:inline;
+	z-index:2009;
+	margin: 0px;
+padding: 0px; 
+border: 0px;
+}
+header.mainMenu:hover
+{
+	height:200;
+}
+header.mainHidden
+{
+	transition-property:color;
+	transition-duration:2s;
+	-o-transition-property:color;
+	-o-transition-duration:2s;
+	-webkit-transition-property:color;
+	-webkit-transition-duration:2s;
+	-moz-transition-property:color;
+	-moz-transition-duration:2s;
+	-ms-transition-property:color;
+	-ms-transition-duration:2s;
+	text-align:left;
+	color:rgba(1000,1000,1000,0);
+	font-size:50px;
+	word-break:keep-all;
+	visibility:none;
+	z-index:2009;
+	margin: 0px;
+padding: 0px; 
+border: 0px;
+}
+nav
+{
+	float:left;
+	font-size:25px;
+	color:#FFF;
+	z-index:2;
+}
+a.nav
+{
+	font-style:normal;
+	color:inherit;
+	font-size:inherit;
+	text-decoration:none;
+}
+.centerp
+{
+	font-size:40px;
+	color:#FFF;
+	text-align:center;
+	z-index:2;
+}
+div.section
+{
+	color:#000;
+	text-align:left;
+	font-size:30px;
+	background-color:rgba(255,255,255,0.25);
+	z-index:0;
+	font-family: Segoe UI Light;
+}
+div.article
+{
+	font-size:20px;
+	color:#000;
+	background-color:rgba(255,238,51,0.5);
+	text-align:left;
+	word-wrap:break-word;
+	z-index:2;
+	font-family: Segoe UI Light;
+}
+.titlebackground
+{
+	-o-transition-property:height;
+	-o-transition-duration:2s;
+	-webkit-transition-property:height;
+	-webkit-transition-duration:2s;
+	-moz-transition-property:height;
+	-moz-transition-duration:2s;
+	-ms-transition-property:height;
+	-ms-transition-duration:2s;
+	visibility:visible;
+	z-index:100;
+	background-color:rgba(0,0,0,0.9);
+	height:65px;
+	width:100%;
+	float:left;
+}
+.titlebackgroundHidden
+{
+	-o-transition-property:height;
+	-o-transition-duration:2s;
+	-webkit-transition-property:height;
+	-webkit-transition-duration:2s;
+	-moz-transition-property:height;
+	-moz-transition-duration:2s;
+	-ms-transition-property:height;
+	-ms-transition-duration:2s;
+	visibility:visible;
+	z-index:100;
+	background-color:#333;
+	height:0px;
+	width:100%;
+}
+
+#m
+{ 
+z-index:-1000;
+font-size:25px;
+	-o-transition-property: color, border-bottom;
+	-o-transition-duration: 0.5s, 0.5s;
+	-moz-transition-property: color, border-bottom;
+	-moz-transition-duration: 0.5s, 0.5s;
+	-webkit-transition-property: color, border-bottom;
+	-webkit-transition-duration: 0.5s, 0.5s;
+	-ms-transition-property: color, border-bottom;
+	-ms-transition-duration: 0.5s, 0.5s;
+border-bottom:2px solid #666;
+visibility:inherit;
+}
+#m:hover{ color:#fff; border-bottom:5px solid white;z-index:2002;}
+body
+{
+background-color:#111;
+}
+p.nav
+{
+color:#fff;	
+font-size:15px;
+float:left;
+margin: 0px;
+font-weight: bold;
+border: 0px;
+}
+.help
+{
+	color:#107c10;
+	font-size:20px;
+	z-index:inherit;
+	font-family: Segoe UI Light;
+}
+.defaultButton
+{
+	-o-transition-property: color, background-color;
+	-o-transition-duration: 0.5s, 0.5s;
+	-moz-transition-property: color, background-color;
+	-moz-transition-duration: 0.5s, 0.5s;
+	-webkit-transition-property: color, background-color;
+	-webkit-transition-duration: 0.5s, 0.5s;
+	-ms-transition-property: color, background-color;
+	-ms-transition-duration: 0.5s, 0.5s;
+	background-color:#555;
+	color:#fff;
+	vertical-align:central;
+	text-align:left;
+	width:100%;
+	height:100%;
+	font-size:20px;
+}
+.defaultButton:hover
+{
+	color:#333;
+	background-color:#888;	
+}
+div.page
+{
+	background-color:#202020;
+}
+.container
+{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:0;
+	background-color:#FFF;
+	backface-visibility:hidden;
+}
+.image
+{
+	position:absolute;
+	z-index:-1;
+}
+.content
+{
+	-o-transition-property: width,height;
+	-o-transition-duration: 2s,2s;
+	-moz-transition-property: width,height;
+	-moz-transition-duration: 2s,2s;
+	-webkit-transition-property: width,height;
+	-webkit-transition-duration: 2s,2s;
+	-ms-transition-property: width,height;
+	-ms-transition-duration: 2s,2s;
+	overflow:auto;
+	float:left;
+	width:90%;
+	height:100%;
+	z-index:1;
+	background-color:rgba(255,255,255,0);
+}
+.contentHoverHorizontal
+{
+	-o-transition-property: width;
+	-o-transition-duration: 2s;
+	-moz-transition-property: width;
+	-moz-transition-duration: 2s;
+	-webkit-transition-property: width;
+	-webkit-transition-duration: 2s;
+	-ms-transition-property: width;
+	-ms-transition-duration: 2s;
+	background-color:rgba(255,255,255,0);
+	overflow:auto;
+	float:left;
+	height:100%;
+	z-index:1;
+	width:80%;
+}
+.contentHoverVertical
+{
+	-o-transition-property: width;
+	-o-transition-duration: 2s;
+	-moz-transition-property: width;
+	-moz-transition-duration: 2s;
+	-webkit-transition-property: width;
+	-webkit-transition-duration: 2s;
+	-ms-transition-property: width;
+	-ms-transition-duration: 2s;
+	background-color:rgba(255,255,255,0);
+	overflow:auto;
+	float:left;
+	height:100%;
+	z-index:9000;
+	width:80%;
+}
+.contentZoom
+{
+	-o-transition-property: width,height;
+	-o-transition-duration: 2s,2s;
+	-moz-transition-property: width,height;
+	-moz-transition-duration: 2s,2s;
+	-webkit-transition-property: width,height;
+	-webkit-transition-duration: 2s,2s;
+	-ms-transition-property: width,height;
+	-ms-transition-duration: 2s,2s;
+	background-color:#222;
+	overflow:auto;
+	float:left;
+	width:100%;
+	height:100%;
+	z-index:9000;
+	background-color:#FFF;
+}
+.toggleButton
+{
+	-o-transition-property: color, background-color;
+	-o-transition-duration: 0.5s, 0.5s;
+	-moz-transition-property: color, background-color;
+	-moz-transition-duration: 0.5s, 0.5s;
+	-webkit-transition-property: color, background-color;
+	-webkit-transition-duration: 0.5s, 0.5s;
+	-ms-transition-property: color, background-color;
+	-ms-transition-duration: 0.5s, 0.5s;
+	background-color:#555;
+	color:#fff;
+	text-align:left;
+	font-size:20px;
+}
+.toggleButton:hover
+{
+	color:#333;
+	background-color:#888;	
+}
+.textInput
+{
+	-o-transition-property: color, border,visibility;
+	-o-transition-duration: 0.5s, 0.5s, 0.5s;
+	-o-transition-delay:0s,0s,0s;
+	-moz-transition-property: color, border,visibility;
+	-moz-transition-duration: 0.5s, 0.5s, 0.5s;
+	-moz-transition-delay:0s,0s,0s;
+	-webkit-transition-property: color, border,visibility;
+	-webkit-transition-duration: 0.5s, 0.5s, 0.5s;
+	-webkit-transition-delay:0s,0s,0s;
+	-ms-transition-property: color, border,visibility;
+	-ms-transition-duration: 0.5s, 0.5s, 0.5s;
+	-ms-transition-delay:0s,0s,0s;
+	vertical-align:central;
+	alignment-adjust:central;
+	alignment-baseline:central;
+	background-position:center;
+	text-align:center;
+	width:98%;
+	background-color:rgba(48,48,48,0);
+	color:rgba(255,255,255,1);
+	font-size:20px;
+	border:1px solid rgba(255,255,255,1);
+	visibility:visible;
+	padding:0px;
+	margin:0px;
+}
+.textInputHidden
+{
+	-o-transition-property: color, border,visibility;
+	-o-transition-duration: 0.5s, 0.5s, 0.5s;
+	-o-transition-delay:0s,0s,0s;
+	-moz-transition-property: color, border,visibility;
+	-moz-transition-duration: 0.5s, 0.5s, 0.5s;
+	-moz-transition-delay:0s,0s,0s;
+	-webkit-transition-property: color, border,visibility;
+	-webkit-transition-duration: 0.5s, 0.5s, 0.5s;
+	-webkit-transition-delay:0s,0s,0s;
+	-ms-transition-property: color, border,visibility;
+	-ms-transition-duration: 0.5s, 0.5s, 0.5s;
+	-ms-transition-delay:0s,0s,0s;
+	vertical-align:central;
+	text-align:center;
+	alignment-adjust:central;
+	width:98%;
+	background-color:rgba(48,48,48,0);
+	color:rgba(255,255,255,0);
+	font-size:20px;
+	border:1px solid rgba(255,255,255,0);
+	visibility:hidden;
+	padding:0px;
+	margin:0px;
+}
