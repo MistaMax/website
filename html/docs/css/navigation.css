@@ -1,0 +1,108 @@
+@charset "utf-8";
+table.menu
+{
+	border:none;
+margin: 0px;
+padding: 0px;
+background-color:transparent;
+width:100%;
+visibility:visible;
+}
+table.menuHidden
+{
+	border:none;
+margin: 0px;
+padding: 0px;
+background-color:transparent;
+width:100%;
+visibility:hidden;
+}
+
+td.menuHorizantalNormal
+{
+		-o-transition-property: width, color, border-bottom, border-right;
+	-o-transition-duration: 2s, 2s, 2s, 2s;
+	-moz-transition-property: width, color, border-bottom, border-right;
+	-moz-transition-duration: 2s, 2s, 2s, 2s;
+	-webkit-transition-property: width, color, border-bottom, border-right;
+	-webkit-transition-duration: 2s, 2s, 2s, 2s;
+	-ms-transition-property: width, color, border-bottom, border-right;
+	-ms-transition-duration: 2s, 2s, 2s, 2s;
+	z-index:2000;
+	background-color:rgba(255,255,255,0);
+	word-wrap:break-word;
+	color:rgba(0,0,0,0.0);
+	padding: 0px;
+	width:100%;
+	font-size:17px;
+	border-right:1px solid rgba(255,255,255,0);
+	font-family: Segoe UI Light;
+	border-bottom:1px solid rgba(255,255,255,0);}
+
+td.menuHorizantalHover
+{
+		-o-transition-property: width, color, border-bottom, border-right,background-color;
+	-o-transition-duration: 2s, 2s, 2s, 2s, 2s;
+	-moz-transition-property: width, color, border-bottom, border-right,background-color;
+	-moz-transition-duration: 2s, 2s, 2s, 2s, 2s;
+	-webkit-transition-property: width, color, border-bottom, border-right, background-color;
+	-webkit-transition-duration: 2s, 2s, 2s, 2s, 2s;
+	-ms-transition-property: width, color, border-bottom, border-right, background-color;
+	-ms-transition-duration: 2s, 2s, 2s, 2s, 2s;
+	border-right:3px solid rgba(255,255,255,0);
+	font-size:17px;
+	padding: 0px;
+	width:100%;
+color: #000;
+vertical-align: top;
+border-bottom:3px solid rgba(255,255,255,0);
+	font-family: Segoe UI;
+}
+td.menuHorizantalHover:hover
+{
+	font-family: Segoe UI;
+	color:#000;
+	background-color:rgba(255,255,255,0.5);
+}
+#navbackg
+{
+}
+.navbackg:hover
+{
+	width:20%;
+}
+.navbackg
+{
+	-o-transition-property: width, visibility;
+	-o-transition-duration: 2s, 2s;
+	-moz-transition-property: width, visibility;
+	-moz-transition-duration: 2s, 2s;
+	-webkit-transition-property: width, visibility;
+	-webkit-transition-duration: 2s, 2s;
+	-ms-transition-property: width, visibility;
+	-ms-transition-duration: 2s, 2s;
+	width:10%;
+	float:left;
+	height:100%;
+	background-color:rgba(255,255,0,0.75);
+	word-wrap:break-word;
+	visibility:inline;
+}
+.navbackgHidden
+{
+	-o-transition-property: width, visibility;
+	-o-transition-duration: 2s, 2s;
+	-moz-transition-property: width, visibility;
+	-moz-transition-duration: 2s, 2s;
+	-webkit-transition-property: width, visibility;
+	-webkit-transition-duration: 2s, 2s;
+	-ms-transition-property: width, visibility;
+	-ms-transition-duration: 2s, 2s;
+	width:0%;
+	float:left;
+	height:100%;
+	background-color:#666;
+	word-wrap:break-word;
+	z-index:200000;
+	visibility:none;
+}
