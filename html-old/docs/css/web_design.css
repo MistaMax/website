@@ -17,8 +17,7 @@
 {
 	border-top:1px solid rgba(0,0,0,0.25);
 }
-.canvass
-{
+.canvass{
 	transition-property:opacity,visibility,display;
 	transition-duration:2s;
 	-o-transition-property:opacity,visibility,display;
