@@ -14,5 +14,7 @@
 #content{
     position: relative;
     left:20%;
+    right:20%;
+    width:60%;
     align-content: center;
 }
