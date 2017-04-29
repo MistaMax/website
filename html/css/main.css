@@ -8,6 +8,7 @@ div #login{
     text-align: right;
     font-family: Segoe UI Light;
     z-index: 5000;
+    color: blue;
 }
 
 /*body{
