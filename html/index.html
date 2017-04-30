@@ -9,8 +9,8 @@
     <script type="text/javascript" src="javascript/main.js"></script>
 </head>
 
-<body>
-    <div id="content">
+<body onload="sizeAdjust();">
+    <div id="content" class="container">
         <div id="logIn">Log In</div>
 
         <div id="titleName">Best Website</div>
@@ -30,6 +30,12 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        var titleBorderBottom = 1;
+        function sizeAdjust() {
+            $("#content").css(height,$("body").height());
+        }
+    </script>
 </body>
 
 </html>
