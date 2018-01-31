@@ -63,3 +63,33 @@
 #main-cont{
     background-color:white;
 }
+
+.nav-mobile-body {
+    
+}
+
+.bg-rrgblue {
+    background-color:rgb(3, 64, 97);
+}
+
+.bg-rrgorange {
+    background-color:rgba(240,131,6,1);
+}
+
+.text-rrgblue {
+    color:rgb(3, 64, 97);
+}
+
+.text-rrgorange {
+    color:rgba(240,131,6,1);
+}
+
+.nav-block {
+    background-color:rgba(3, 64, 97, 0.75);
+    color:rgb(240,131,6);
+}
+
+.nav-block:hover{
+    background-color:rgba(240,131,6,0.75);
+    color: rgb(3, 64, 97);
+}
