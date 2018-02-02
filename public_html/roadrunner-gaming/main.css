@@ -94,3 +94,10 @@
     background-color:rgba(240,131,6,0.75);
     color: rgb(3, 64, 97);
 }
+
+.twitch-vid {
+    background-color:black;
+}
+.twitch-chat {
+    background-color:white;
+}
