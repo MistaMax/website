@@ -95,15 +95,14 @@
     color: rgb(3, 64, 97);
 }
 
-.twitch-vid {
-    background-color:black;
-}
-.twitch-chat {
-    background-color:white;
-}
-
 .logoutButton {
     font-size:18px;
+    height:20px;
+    background-color:black;
+    color:white;
+}
+
+.logoutButton:hover {
     background-color:white;
     color:black;
 }
@@ -112,6 +111,18 @@
     cursor: pointer;
     height:20px;
     font-size:18px;
+    background-color:white;
+    color:black;
+}
+
+.loginBut{
+    font-size:18px;
+    height:20px;
+    background-color:black;
+    color:white;
+}
+
+.loginBut:hover{
     background-color:white;
     color:black;
 }
