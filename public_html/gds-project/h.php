@@ -16,7 +16,7 @@ session_start();
         crossorigin="anonymous">
 
     <title>GDS</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--<link rel="stylesheet" type="text/css" href="style.css">-->
 </head>
 <body id="body-over">
 <nav class="site-header sticky-top py-1" id="menu-table">
@@ -27,17 +27,17 @@ session_start();
         <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="index.html">Home</a>
         <?php
 					if (isset($_SESSION['u_id'])){
-						echo '<h2>USER: '.$_SESSION['u_uid'].'</h2>
-							<form action="includes/logout.inc.php" method ="POST">
-								<button type="submit" name="submit">LOGOUT</button>
+						echo '<div class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item">USER: '.$_SESSION['u_uid'].'</div>
+							<form class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" action="includes/logout.inc.php" method ="POST">
+								<button class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" type="submit" name="submit">LOGOUT</button>
 							</form>';
 					} else{
-						echo '<form action="includes/login.inc.php" method="POST">
-								<input type="text" name="uid" placeholder="USERNAME">
-								<input type="password" name="pwd" placeholder="PASSWORD">
-								<button type="submit" name="submit">LOGIN</button>
+						echo '<form class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" action="includes/login.inc.php" method="POST">
+								<input class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" type="text" name="uid" placeholder="USERNAME">
+								<input class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" type="password" name="pwd" placeholder="PASSWORD">
+								<button class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" type="submit" name="submit">LOGIN</button>
 							</form>
-							<a href="s.php">SIGN UP</a>';
+							<a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="s.php">SIGN UP</a>';
 					}
 		?>
     </div>

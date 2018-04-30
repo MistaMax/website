@@ -9,19 +9,19 @@ if(isset($_POST['submit'])){
 	
 	//Check if uid or pwd is empty
 	if(empty($uid) || empty($pwd)){
-		header("Location: ../signup.php?signup=empty");
+		header("Location: ../s.php?signup=empty");
 		exit();
 	}else {
 		//check
 		if(!preg_match("/^[a-zA-Z0-9]*$/", $uid) || !preg_match("/^[a-zA-Z0-9]*$/", $pwd)) {
-			header("Location: ../signup.php?signup=invalid");
+			header("Location: ../s.php?signup=invalid");
 			exit();
 		}else {
 			$sql = "SELECT * FROM users WHERE user_name='$uid'";
 			$result = mysqli_query($connection, $sql);
 			$resultCheck = mysqli_num_rows($result);
 			if($resultCheck > 0){
-				header("Location: ../signup.php?signup=usertaken");
+				header("Location: ../s.php?signup=usertaken");
 				exit();
 			}else {
 				//password hash
@@ -29,13 +29,13 @@ if(isset($_POST['submit'])){
 				//enter in DB
 				$sql = "INSERT INTO users (user_name, user_pwd) VALUES ('$uid', '$hashPwd');";
 				mysqli_query($connection, $sql);
-				header("Location: ../signup.php?signup=success");
+				header("Location: ../s.php?signup=success");
 				exit();
 			}
 		}
 	}
 	
 }else {
-	header("Location: ../signup.php");
+	header("Location: ../s.php");
 	exit();
 }
