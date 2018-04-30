@@ -36,7 +36,7 @@ session_start();
                               <form class="py-2 d-none d-md-inline-block display-4 align-bottom loginform" id="menu-item" action="includes/login.inc.php" method="POST">
 								<input class="inp" type="text" name="uid" placeholder="USERNAME">
 								<input class="inp" type="password" name="pwd" placeholder="PASSWORD">
-								<button class="loginBut" type="submit" name="submit">LOGIN</button>
+								<button class="loginBut" type="submit" name="submit">Login</button>
 							</form>';
 					}
 		?>
