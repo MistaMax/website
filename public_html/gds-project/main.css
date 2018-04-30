@@ -1,15 +1,15 @@
 #menu-table{
-    background-color:rgba(3, 64, 97,1);
+    background-color:rgba(0, 0, 0,1);
     text-align: center;
     font-size: 25px;
-    color: rgba(240,131,6,1);
+    color: rgba(255,255,255,1);
 }
 
 #menu-item {
     background-color:inherit;
     text-align: center;
     font-size: 30px;
-    color: rgba(240,131,6,1);
+    color: rgba(255,255,255,1);
     border-width:0px;
     position: relative;
     bottom: 0;
