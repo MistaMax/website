@@ -24,18 +24,18 @@ session_start();
         <a class="py-2" href="nav.html">
             <img src="cart.gif" id="logo-badge" width="60" height="60">
         </a>
-        <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="index.html">Home</a>
+        <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="i.php">Home</a>
         <?php
 					if (isset($_SESSION['u_id'])){
 						echo '<div class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item">USER: '.$_SESSION['u_uid'].'</div>
-							<form class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" action="includes/logout.inc.php" method ="POST">
-								<button class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" type="submit" name="submit">LOGOUT</button>
+							<form class="py-2 d-none d-md-inline-block display-4 align-bottom loginform" id="menu-item" action="includes/logout.inc.php" method ="POST">
+								<button class="logoutButton" type="submit" name="submit">LOGOUT</button>
 							</form>';
 					} else{
-						echo '<form class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" action="includes/login.inc.php" method="POST">
-								<input class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" type="text" name="uid" placeholder="USERNAME">
-								<input class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" type="password" name="pwd" placeholder="PASSWORD">
-								<button class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" type="submit" name="submit">LOGIN</button>
+						echo '<form class="py-2 d-none d-md-inline-block display-4 align-bottom loginform" id="menu-item" action="includes/login.inc.php" method="POST">
+								<input class="inp" type="text" name="uid" placeholder="USERNAME">
+								<input class="inp" type="password" name="pwd" placeholder="PASSWORD">
+								<button class="loginBut" type="submit" name="submit">LOGIN</button>
 							</form>
 							<a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="s.php">SIGN UP</a>';
 					}
