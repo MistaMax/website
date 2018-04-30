@@ -25,6 +25,20 @@ session_start();
             <img src="cart.gif" id="logo-badge" width="60" height="60">
         </a>
         <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="index.html">Home</a>
-        <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="login.php">Login</a>
+        <?php
+					if (isset($_SESSION['u_id'])){
+						echo '<h2>USER: '.$_SESSION['u_uid'].'</h2>
+							<form action="includes/logout.inc.php" method ="POST">
+								<button type="submit" name="submit">LOGOUT</button>
+							</form>';
+					} else{
+						echo '<form action="includes/login.inc.php" method="POST">
+								<input type="text" name="uid" placeholder="USERNAME">
+								<input type="password" name="pwd" placeholder="PASSWORD">
+								<button type="submit" name="submit">LOGIN</button>
+							</form>
+							<a href="s.php">SIGN UP</a>';
+					}
+		?>
     </div>
 </nav>
