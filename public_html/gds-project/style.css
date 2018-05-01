@@ -6,7 +6,7 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html, body, div, span, object, iframe,
+/*html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
@@ -58,14 +58,12 @@ a {
     background:transparent;
 }
 
-/* change colours to suit your needs */
 ins {
     background-color:#ff9;
     color:#000;
     text-decoration:none;
 }
 
-/* change colours to suit your needs */
 mark {
     background-color:#ff9;
     color:#000; 
@@ -87,7 +85,6 @@ table {
     border-spacing:0;
 }
 
-/* change border colour to suit your needs */
 hr {
     display:block;
     height:1px;
@@ -103,7 +100,7 @@ input, select {
 
 
 
-
+*/
 
 /*MY Style Code*/
 
@@ -114,7 +111,8 @@ input, select {
     padding: 16px;
     font-size: 16px;
     border: none;
-	width:90%;
+	width: 70%;
+	margin-left: 15%;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -122,6 +120,8 @@ input, select {
     position: relative;
     display: inline-block;
 	color: black;
+	width: 70%;
+	margin-left: 15%;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -132,10 +132,13 @@ input, select {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+	width: 70%;
+	margin-left: 15%;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
+	
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -163,21 +166,37 @@ input, select {
 	width: 1000px;
 	letter-spacing: 2px;
 	word-spacing: 5px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
 }
 
 a {
 	text-decoration: none;
+	
 }
 
 body {
-	background-image: url("grocery3.jpg");
+	background-image: url("grocery4.jpg");
 	background-color: #ccffff;
+	
+}
+table, h2 , h3, select, form {	
+	width: 70%;
+	margin-left: 15%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
+	font-size: 22px;
+	letter-spacing: 2px;
+	word-spacing: 7px;
+	display: block;
+	background-color: #555;
+	color: #00FF00;
+	text-align: center;
 } 
 
 header nav {
 	width: 100%;
 	height: 65px;
-	background-color: #ccffff;
+	background-color: #00FF00;
+	//background-color: #ccffff;
 }
 
 header nav ul{
@@ -191,9 +210,9 @@ header nav ul li{
 
 /*HOME link*/
 header nav ul li a{
-	font-family: Impact, Charcoal, sans-serif; 
-	font-size: 22px;
-	color: #111;
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
+	font-size: 25px;
+	color: #555;
 	line-height: 43px;
 }
 
@@ -214,7 +233,7 @@ header .nav-login form input{
 	margin-right: 10px;
 	border: none;
 	background-color: #f3f3f3;
-	font-family: Impact, Charcoal, sans-serif; 
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
 	font-size: 14px;
 	color: #111;
 	line-height: 30px;
@@ -228,7 +247,7 @@ header .nav-login form button{
 	margin-right: 10px;
 	border: none;
 	background-color: #222;
-	font-family: Impact, Charcoal, sans-serif; 
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
 	font-size: 14px;
 	color: #f3f3f3;
 	cursor: pointer;
@@ -244,7 +263,7 @@ header .nav-login h2{
 	margin-right: 10px;
 	border: none;
 	background-color: #f3f3f3;
-	font-family: Impact, Charcoal, sans-serif; 
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
 	font-size: 18px;
 	color: #111;
 	line-height: 30px;
@@ -266,7 +285,7 @@ header .nav-login a{
 	border: none;
 	float: left;
 	background-color: #222;
-	font-family: Impact, Charcoal, sans-serif; 
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
 	font-size: 14px;
 	color: #f3f3f3;
 	line-height: 30px;
@@ -278,21 +297,22 @@ header .nav-login a{
 }
 
 /*main page Title*/
+/*
 .main-container h2{
 	display: block;
 	background-color: #999;
 	width:60%;
 	height: 50px;
 	margin:0 auto;
-	/*/border: 2px solid #ccffff;*/
+	//border: 2px solid #ccffff;
 	padding-top: 0px;
-	font-family: Impact, Charcoal, sans-serif; 
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
 	font-size: 40px;
 	color: #111;
 	line-height: 50px;
 	text-align: center;
 }
-
+*/
 .main-container p{
 	display: block;
 	background-color: #ccffff;
@@ -301,7 +321,7 @@ header .nav-login a{
 	margin:0 auto;
 	//border: 2px solid #999;
 	padding-top: 0px;
-	font-family: Impact, Charcoal, sans-serif; 
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
 	font-size: 20px;
 	color: #111;
 	line-height: 20px;
@@ -323,7 +343,7 @@ header .nav-login a{
 	margin-bottom: 5px;
 	border: none;
 	background-color: #f3f3f3;
-	font-family: Impact, Charcoal, sans-serif; 
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
 	font-size: 16px;
 	color: #111;
 	line-height: 40px;
@@ -336,7 +356,7 @@ header .nav-login a{
 	margin:0 auto;
 	border: none;
 	background-color: #ccc;
-	font-family: Impact, Charcoal, sans-serif; 
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
 	font-size: 16px;
 	color: #111;
 	cursor:pointer;

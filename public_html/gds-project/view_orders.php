@@ -3,7 +3,7 @@
 	include 'includes/dbh.php';
 ?>
 
-<h2>View_Product</h2>
+<h2>View_Orders</h2>
 
 <?php 
 //$query = "SELECT * FROM `inventory`";
