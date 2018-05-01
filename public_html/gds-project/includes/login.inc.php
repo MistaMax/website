@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
 		header("Location: ../index.php?login=error1");
 		exit();
 	}else {
-		$sql = "SELECT * FROM login WHERE szUsername='$uid'";
+		$sql = "SELECT * FROM Login WHERE szUsername='$uid'";
 		$result = mysqli_query($connection, $sql);
 		$resultCheck = mysqli_num_rows($result);
 		if ($resultCheck < 1){

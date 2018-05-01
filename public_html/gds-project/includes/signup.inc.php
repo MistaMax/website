@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
 			header("Location: ../signup.php?signup=invalid");
 			exit();
 		}else {
-			$sql = "SELECT * FROM login WHERE szUsername='$uid'";
+			$sql = "SELECT * FROM Login WHERE szUsername='$uid'";
 			$result = mysqli_query($connection, $sql);
 			$resultCheck = mysqli_num_rows($result);
 			if($resultCheck > 0){
@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
 				//password hash
 				$hashPwd = password_hash($pwd, PASSWORD_DEFAULT);
 				//enter in DB
-				$sql = "INSERT INTO login (szUsername, szPassword) VALUES ('$uid', '$hashPwd');";
+				$sql = "INSERT INTO Login VALUES ('$uid', '$hashPwd')";
 				mysqli_query($connection, $sql);
 				header("Location: ../signup.php?signup=success");
 				exit();
