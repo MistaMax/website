@@ -27,7 +27,7 @@ session_start();
         <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="index.php">Home</a>
         <?php
 					if (isset($_SESSION['u_id'])){
-						echo '<div class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item">USER: '.$_SESSION['u_uid'].'</div>
+						echo '<div class="py-2 d-none d-md-inline-block display-4 align-bottom color-white" id="menu-item">User: '.$_SESSION['u_uid'].'</div>
 							<form class="py-2 d-none d-md-inline-block display-4 align-bottom loginform" id="menu-item" action="includes/logout.inc.php" method ="POST">
 								<button class="logoutButton" type="submit" name="submit">LOGOUT</button>
 							</form>';

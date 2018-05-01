@@ -97,8 +97,10 @@
 
 .logoutButton {
     font-size:18px;
-    height:20px;
+    height:30px;
     background-color:black;
+	border:none;
+	display:inline-block;
     color:white;
 	cursor:pointer;
 }
@@ -137,4 +139,8 @@
 
 .loginform:hover{
     cursor: default;
+}
+
+.color-white{
+    color:white;
 }
