@@ -11,6 +11,16 @@
 			if(isset($_SESSION['u_id'])){
 				echo '<h1 class="display-4 font-weight-normal">WELCOME TO  GROCERCERY DELIVERY MANAGEMENT SYSTEM</h1><h4></h4>';
 				?>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
+                    <div class="col-md-5 p-lg-5 mx-auto my-5">
+						<p class="lead font-weight-normal">
 				<div class="dropdown">
 				<button class="dropbtn">Take Action!</button>
 				<div class="dropdown-content">
