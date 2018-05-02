@@ -18,9 +18,9 @@ if (isset($_POST['submit'])){
 	
 		//error trap should ONLY return 1 row
 		$row = mysqli_fetch_array($response);
-		echo '</br> Product: ' . $row['szProductName'] . " Old Price " . $row['dbPrice'];
+		echo '<h4><h2></br> Product: ' . $row['szProductName'] . " Old Price " . $row['dbPrice'] . '</h4></h2>';
 		
-		echo '</br> Enter new Price:';
+		echo '<h4><h2></br> Enter new Price:</h4></h2>';
 		echo '<form action="Changed.php" method="POST">
 				<input type="hidden" name="P_ID" value=' . $P_ID .'>
 				<input type="hidden" name="From" value="P">
@@ -59,6 +59,23 @@ if (isset($_POST['submit'])){
 				<input type="hidden" name="P_ID" value=' . $P_ID .'>
 				<input type="hidden" name="From" value="Q">
 				<input type="text" name="New_Val" placeholder="Quantity">
+				<button type="submit" name="submit">Submit</button>
+				</form>';
+	}
+	
+	if( $act == 'Location'){
+		$query = "SELECT * FROM `product` WHERE szProductID = '$P_ID'";
+		$response = mysqli_query($connection, $query);
+	
+		//error trap should ONLY return 1 row
+		$row = mysqli_fetch_array($response);
+		echo '</br> Product: ' . $row['szProductName'] . " Old Location " . $row['szLocation'];
+		
+		echo '</br> Enter new Location:';
+		echo '<form action="Changed.php" method="POST">
+				<input type="hidden" name="P_ID" value=' . $P_ID .'>
+				<input type="hidden" name="From" value="L">
+				<input type="text" name="New_Val" placeholder="Location">
 				<button type="submit" name="submit">Submit</button>
 				</form>';
 	}

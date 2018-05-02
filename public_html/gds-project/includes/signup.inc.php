@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
 				//password hash
 				$hashPwd = password_hash($pwd, PASSWORD_DEFAULT);
 				//enter in DB
-				$sql = "INSERT INTO Login VALUES ('$uid', '$hashPwd')";
+				$sql = "INSERT INTO Login (szUsername, szPassword) VALUES ('$uid', '$hashPwd');";
 				mysqli_query($connection, $sql);
 				header("Location: ../signup.php?signup=success");
 				exit();

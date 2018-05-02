@@ -20,12 +20,21 @@ if (isset($_POST['submit'])){
 			$response = mysqli_query($connection, $query);
 			header("Location: view_product.php?Changed=sucess");
 			break;
+			
 		case "N":
 			$New_Val = $_POST['New_Val'];
 			$query =  "UPDATE product SET szProductName = '$New_Val' WHERE szProductID ='$P_ID'";
 			$response = mysqli_query($connection, $query);
 			header("Location: view_product.php?Changed=sucess");
 			break;
+			
+		case "L":
+			$New_Val = $_POST['New_Val'];
+			$query =  "UPDATE product SET szLocation = '$New_Val' WHERE szProductID ='$P_ID'";
+			$response = mysqli_query($connection, $query);
+			header("Location: view_product.php?Changed=sucess");
+			break;
+			
 		case "Q":
 			$New_Val = $_POST['New_Val'];
 			if($New_Val < 0){

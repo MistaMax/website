@@ -7,12 +7,13 @@ if(isset($_POST['submit'])){
 	$P_ID = $_POST['Product_Id'];
 	$P_name = $_POST['Product_Name'];
 	$P_price = $_POST['Price'];
+	$P_Loc = $_POST['Location'];
 	$P_Quant = $_POST['Quantity'];
 	$P_exp = $_POST['Expire_Date'];
-	$P_aqqr = date("m-d-Y");
+	$P_aqqr = date("Y-m-d");
 	
 	//Check if all fields are entered
-	if(empty($P_ID) || empty($P_name) || empty($P_price) || empty($P_Quant) || empty($P_exp)){
+	if(empty($P_ID) || empty($P_name) || empty($P_price) || empty($P_Quant) || empty($P_exp) || empty($P_Loc) ){
 		header("Location: Add_Product.php?Add=empty1");
 		exit();
 	}else {
@@ -31,7 +32,7 @@ if(isset($_POST['submit'])){
 				//enter in DB
 				$sql = "INSERT INTO inventory (szProductID, iQuantity, szRecievedDt, szExpirationDt) VALUES ('$P_ID', '$P_Quant','$P_aqqr','$P_exp');";
 				mysqli_query($connection, $sql);
-				$sql = "INSERT INTO product (szProductID, szProductName, dbPrice) VALUES ('$P_ID', '$P_name','$P_price');";
+				$sql = "INSERT INTO product (szProductID, szProductName, szLocation, dbPrice) VALUES ('$P_ID', '$P_name','$P_Loc','$P_price');";
 				mysqli_query($connection, $sql);
 				header("Location: view_product.php?Add=success");
 				exit();
