@@ -55,3 +55,7 @@ if (isset($_POST['submit'])){
 ?>
 </div>
 </section>
+
+<?php
+	include_once 'footer.php';
+?>

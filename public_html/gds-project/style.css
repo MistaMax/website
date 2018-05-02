@@ -487,17 +487,19 @@ select, option {
 	width: 40%;
 	margin-left: 30%;
 	text-align: center;
-	border: none;
 	font-family: "Trebuchet MS", Helvetica, sans-serif; 
 	font-size: 16px;
-    background-color: #555;
-	color: white;
+    cursor:pointer;
+	background-color: rgba(255,255,255,0.2);
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	color:black;
 	padding: 16px;
 	font-size: 40px;
-	border: none;
 }
 .edit-form button:hover {
-	background-color: #00FF00;
+	background-color: rgba(255,255,255,0.6);
 }
 
 /* Show the dropdown menu on hover */

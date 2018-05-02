@@ -86,3 +86,7 @@ if($response){
 ?>
 </div>
 </section>
+
+<?php
+	include_once 'footer.php';
+?>
