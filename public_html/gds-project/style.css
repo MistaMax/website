@@ -132,7 +132,7 @@ input, select {
     position: relative;
 	display: inline-block;
 	width: 70%;
-	margin-left: 15%;
+	//margin-left: 15%;
 	text-align: center;
 	border: none;
 	font-family: "Trebuchet MS", Helvetica, sans-serif; 
@@ -164,7 +164,10 @@ input, select {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 	width: 70%;
-	margin-left: 15%;
+	//margin-left: 15%;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
 }
 
 /* Links inside the dropdown */
@@ -178,7 +181,8 @@ input, select {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-	background-color: #00FF00;
+	background-color: black;
+	color:white;
 }
 
 /* Show the dropdown menu on hover */
@@ -188,7 +192,7 @@ input, select {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #00FF00;
+    //background-color: #00FF00;
 }
 
 
