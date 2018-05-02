@@ -19,7 +19,7 @@ WHERE
 $response = mysqli_query($connection, $query);
 
 
-echo "<h2>EXIPIRES SOON</h2>";
+echo "<h2>EXIPIRATION ALERT</h2>";
 if($response){
 	echo '<table cellspacing="5" cellpadding="5" >
 	<col width = "200">
