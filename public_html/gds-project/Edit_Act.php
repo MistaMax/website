@@ -25,9 +25,9 @@ if (isset($_POST['submit'])){
 	
 		//error trap should ONLY return 1 row
 		$row = mysqli_fetch_array($response);
-		echo '<h1 class="display-4 font-weight-normal"></br> Product: ' . $row['szProductName'] . " Old Price " . $row['dbPrice'] . '</h1>';
+		echo '<h1 class="display-4 font-weight-normal"> Product: ' . $row['szProductName'] . " Old Price " . $row['dbPrice'] . '</h1>';
 		
-		echo '<h1 class="display-4 font-weight-normal"></br> Enter new Price:</h1>';
+		echo '<h1 class="display-4 font-weight-normal"> Enter new Price:</h1>';
 		echo '<form action="Changed.php" method="POST">
 				<input type="hidden" name="P_ID" value=' . $P_ID .'>
 				<input type="hidden" name="From" value="P">
@@ -42,9 +42,9 @@ if (isset($_POST['submit'])){
 	
 		//error trap should ONLY return 1 row
 		$row = mysqli_fetch_array($response);
-		echo '</br> Old Name: ' . $row['szProductName'];
+		echo ' Old Name: ' . $row['szProductName'];
 		
-		echo '</br> Enter new Name:';
+		echo ' Enter new Name:';
 		echo '<form action="Changed.php" method="POST">
 				<input type="hidden" name="P_ID" value=' . $P_ID .'>
 				<input type="hidden" name="From" value="N">
@@ -59,9 +59,9 @@ if (isset($_POST['submit'])){
 	
 		//error trap should ONLY return 1 row
 		$row = mysqli_fetch_array($response);
-		echo '</br> Product: ' . $row['szProductName'] . " Old Quantity " . $row['iQuantity'];
+		echo ' Product: ' . $row['szProductName'] . " Old Quantity " . $row['iQuantity'];
 		
-		echo '</br> Enter new Quantity:';
+		echo ' Enter new Quantity:';
 		echo '<form action="Changed.php" method="POST">
 				<input type="hidden" name="P_ID" value=' . $P_ID .'>
 				<input type="hidden" name="From" value="Q">
@@ -76,9 +76,9 @@ if (isset($_POST['submit'])){
 	
 		//error trap should ONLY return 1 row
 		$row = mysqli_fetch_array($response);
-		echo '</br> Product: ' . $row['szProductName'] . " Old Location " . $row['szLocation'];
+		echo ' Product: ' . $row['szProductName'] . " Old Location " . $row['szLocation'];
 		
-		echo '</br> Enter new Location:';
+		echo ' Enter new Location:';
 		echo '<form action="Changed.php" method="POST">
 				<input type="hidden" name="P_ID" value=' . $P_ID .'>
 				<input type="hidden" name="From" value="L">
