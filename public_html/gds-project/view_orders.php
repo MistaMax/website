@@ -2,10 +2,14 @@
 	include_once 'header.php';
 	include 'includes/dbh.php';
 ?>
-
-<h2>View_Orders</h2>
-
-<?php 
+<div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
+                    <div class="col-md-5 p-lg-5 mx-auto my-5">
+                        <h1 class="display-4 font-weight-normal">View_Orders</h1>
+                        <p class="lead font-weight-normal">
+						<?php 
 //$query = "SELECT * FROM `inventory`";
 $query = "SELECT t1.szOrderID, t1.szOrderDT, SUM(dbTotalPrice) AS dbTotalCost, SUM(iTotalQty) AS iTotalItems 
 FROM (SELECT oo.szProductID, oo.szOrderID, oo.szOrderDT, SUM(oo.iQuantity) * pp.dbPrice AS dbTotalPrice, SUM(oo.iQuantity) AS iTotalQty 
@@ -37,3 +41,9 @@ if($response){
 }
 
 ?>
+						</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

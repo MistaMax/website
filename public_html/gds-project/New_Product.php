@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
 			header("Location: Add_Product.php?Add=empty2");
 			exit();
 		}else {
-			$sql = "SELECT * FROM inventory WHERE szProductID='$P_ID'";
+			$sql = "SELECT * FROM Inventory WHERE szProductID='$P_ID'";
 			$result = mysqli_query($connection, $sql);
 			$resultCheck = mysqli_num_rows($result);
 			if($resultCheck > 0){
@@ -30,7 +30,7 @@ if(isset($_POST['submit'])){
 				exit();
 			}else {
 				//enter in DB
-				$sql = "INSERT INTO inventory (szProductID, iQuantity, szRecievedDt, szExpirationDt) VALUES ('$P_ID', '$P_Quant','$P_aqqr','$P_exp');";
+				$sql = "INSERT INTO Inventory (szProductID, iQuantity, szRecievedDt, szExpirationDt) VALUES ('$P_ID', '$P_Quant','$P_aqqr','$P_exp');";
 				mysqli_query($connection, $sql);
 				$sql = "INSERT INTO product (szProductID, szProductName, szLocation, dbPrice) VALUES ('$P_ID', '$P_name','$P_Loc','$P_price');";
 				mysqli_query($connection, $sql);
