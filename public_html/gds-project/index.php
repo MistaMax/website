@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col">
                 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
-                    <div class="col-md-5 p-lg-5 my-5">
+                    <div class="col-md-5 p-lg-5 mx-auto my-5">
 						<p class="lead font-weight-normal">
 						<?php
 			if(isset($_SESSION['u_id'])){
@@ -17,7 +17,7 @@
 				</div>
 				<div class="col">
 				<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
-                    <div class="col-md-5 p-lg-5 my-5">
+                    <div class="col-md-5 p-lg-5 mx-auto my-5">
 						<p class="lead font-weight-normal">
 				<div class="dropdown">
 				<button class="dropbtn">Take Action!</button>
