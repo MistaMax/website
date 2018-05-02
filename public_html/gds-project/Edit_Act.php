@@ -20,9 +20,9 @@ if (isset($_POST['submit'])){
 	
 		//error trap should ONLY return 1 row
 		$row = mysqli_fetch_array($response);
-		echo '<h4><h2></br> Product: ' . $row['szProductName'] . " Old Price " . $row['dbPrice'] . '</h4></h2>';
+		echo '<h1 class="display-4 font-weight-normal"></br> Product: ' . $row['szProductName'] . " Old Price " . $row['dbPrice'] . '</h1>';
 		
-		echo '<h4><h2></br> Enter new Price:</h4></h2>';
+		echo '<h1 class="display-4 font-weight-normal"></br> Enter new Price:</h1>';
 		echo '<form action="Changed.php" method="POST">
 				<input type="hidden" name="P_ID" value=' . $P_ID .'>
 				<input type="hidden" name="From" value="P">
