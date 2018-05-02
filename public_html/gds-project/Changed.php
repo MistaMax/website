@@ -2,13 +2,9 @@
 	include_once 'header.php';
 	include 'includes/dbh.php';
 ?>
-<div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
-                    <div class="col-md-5 p-lg-5 mx-auto my-5">
-                        <h1 class="display-4 font-weight-normal">Changed</h1>
-                        <p class="lead font-weight-normal">
+<section class="main-container">
+	<div class="main-wrapper">
+                        <h2>Changed</h2>
 						<?php
 if (isset($_POST['submit'])){
 	$P_ID = $_POST['P_ID'];
@@ -57,9 +53,5 @@ if (isset($_POST['submit'])){
 }
 
 ?>
-						</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
+</section>
