@@ -86,10 +86,7 @@ if($response){
 
 
 ?>
-</br>
-</br>
-</br>
-</br>
+
 <?php
 	include_once 'footer.php';
 ?>
