@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
 				//enter in DB
 				$sql = "INSERT INTO Inventory (szProductID, iQuantity, szRecievedDt, szExpirationDt) VALUES ('$P_ID', '$P_Quant','$P_aqqr','$P_exp');";
 				mysqli_query($connection, $sql);
-				$sql = "INSERT INTO product (szProductID, szProductName, szLocation, dbPrice) VALUES ('$P_ID', '$P_name','$P_Loc','$P_price');";
+				$sql = "INSERT INTO Product (szProductID, szProductName, szLocation, dbPrice) VALUES ('$P_ID', '$P_name','$P_Loc','$P_price');";
 				mysqli_query($connection, $sql);
 				header("Location: view_product.php?Add=success");
 				exit();
