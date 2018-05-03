@@ -22,7 +22,7 @@
 				<div class="dropdown">
 				<button class="dropbtn">Take Action!</button>
 				<div class="dropdown-content">
-				<a href="view_product.php">View Product</a>
+				<a href="view_product.php">View Inventory</a>
 				<a href="Edit_Product.php">Edit Product</a>
 				<a href="Add_Product.php">Add A New Product</a>
 				<a href="view_orders.php">View Orders</a>
