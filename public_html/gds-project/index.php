@@ -47,12 +47,6 @@
 			</br>
 			</br>
 			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
 				<?php
 			}
 			else{
