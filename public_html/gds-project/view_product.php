@@ -5,6 +5,8 @@
 <section class="main-container">
 <div class="main-wrapper">
 						<h2>View Product</h2>
+						</div>
+</section>
 						<?php 
 //$query = "SELECT * FROM `inventory`";
 
@@ -44,8 +46,6 @@ if($response){
 }
 
 ?>
-</div>
-</section>
 <?php
 	include_once 'footer.php';
 ?>
