@@ -44,8 +44,12 @@ if($response){
 	}
 	echo '</table>';
 }
-
 ?>
+</br>
+</br>
+</br>
+</br>
+
 <?php
 	include_once 'footer.php';
 ?>

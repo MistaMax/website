@@ -4,7 +4,9 @@
 ?>
 <section class="main-container">
 <div class="main-wrapper">
-                        <h2>View Alerts</h2>
+						<h2>View Alerts</h2>
+						</div>
+</section>
 						<?php 
 //$query = "SELECT * FROM `inventory`";
 $query = "SELECT 
@@ -84,9 +86,10 @@ if($response){
 
 
 ?>
-</div>
-</section>
-
+</br>
+</br>
+</br>
+</br>
 <?php
 	include_once 'footer.php';
 ?>

@@ -4,7 +4,9 @@
 ?>
 <section class="main-container">
 <div class="main-wrapper">
-                        <h2>View Orders</h2>
+						<h2>View Orders</h2>
+						</div>
+</section>
 						<?php 
 //$query = "SELECT * FROM `inventory`";
 $query = "SELECT t1.szOrderID, t1.szOrderDT, SUM(dbTotalPrice) AS dbTotalCost, SUM(iTotalQty) AS iTotalItems 
@@ -37,9 +39,10 @@ if($response){
 }
 
 ?>
-</div>
-</section>
-
+</br>
+</br>
+</br>
+</br>
 <?php
 	include_once 'footer.php';
 ?>
