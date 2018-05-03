@@ -9,7 +9,7 @@
 						<p class="lead font-weight-normal">
 						<?php
 			if(isset($_SESSION['u_id'])){
-				echo '<h1 class="display-4 font-weight-normal">WELCOME TO  GROCERCERY DELIVERY MANAGEMENT SYSTEM</h1>';
+				echo '<h1 class="display-4 font-weight-normal">WELCOME TO  GROCERY DELIVERY MANAGEMENT SYSTEM</h1>';
 				?>
 						</p>
 					</div>
