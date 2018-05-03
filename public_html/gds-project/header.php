@@ -32,12 +32,14 @@ session_start();
 								<button class="logoutButton" type="submit" name="submit">LOGOUT</button>
 							</form>';
 					} else{
+                        
                         echo '<a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="signup.php">Sign Up</a>
                               <form class="py-2 d-none d-md-inline-block display-4 align-bottom loginform" id="menu-item" action="includes/login.inc.php" method="POST">
 								<input class="inp" type="text" name="uid" placeholder="USERNAME">
 								<input class="inp" type="password" name="pwd" placeholder="PASSWORD">
 								<button class="loginBut" type="submit" name="submit">LOGIN</button>
-							</form>';
+                            </form>';
+                            
 					}
 		?>
     </div>
