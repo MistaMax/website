@@ -4,7 +4,7 @@
 ?>
 <section class="main-container">
 <div class="main-wrapper">
-						<h2>View Product</h2>
+						<h2>View Inventory</h2>
 						</div>
 </section>
 						<?php 
