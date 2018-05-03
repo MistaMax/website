@@ -4,7 +4,7 @@
 ?>
 <section class="main-container">
 	<div class="main-wrapper">
-                        <h2>Edit_Product</h2>
+                        <h2>Edit Product</h2>
                         <form class="edit-form" action = "Edit_Act.php" method="POST">
 <select name='action'>
 <option value="price">Price</option>

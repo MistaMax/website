@@ -4,7 +4,7 @@
 ?>
 <section class="main-container">
 	<div class="main-wrapper">
-						<h2>Edit_Act</h2>
+						<h2>Edit Act</h2>
 						</div>
 </section>
 <div class="container-fluid">

@@ -4,7 +4,7 @@
 ?>
 <section class="main-container">
 <div class="main-wrapper">
-						<h2>View_Product</h2>
+						<h2>View Product</h2>
 						<?php 
 //$query = "SELECT * FROM `inventory`";
 
@@ -13,7 +13,7 @@ $query = " SELECT p.szProductID, p.szProductName, p.szLocation, i.iQuantity, p.d
 $response = mysqli_query($connection, $query);
 
 if($response){
-	echo '<table cellspacing="5" cellpadding="5" ><h4></h4>
+	echo '<table class="center" cellspacing="5" cellpadding="5" ><h4></h4>
 	<col width = "200">
 	<col width = "200">
 	<col width = "200">

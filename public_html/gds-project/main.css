@@ -144,3 +144,7 @@
 .color-white{
     color:white;
 }
+
+.center {
+    left:50%;
+}

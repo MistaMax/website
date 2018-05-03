@@ -4,7 +4,7 @@
 ?>
 <section class="main-container">
 <div class="main-wrapper">
-                        <h2>View_Orders</h2>
+                        <h2>View Orders</h2>
 						<?php 
 //$query = "SELECT * FROM `inventory`";
 $query = "SELECT t1.szOrderID, t1.szOrderDT, SUM(dbTotalPrice) AS dbTotalCost, SUM(iTotalQty) AS iTotalItems 
@@ -14,7 +14,7 @@ FROM Orders oo, Product pp WHERE oo.szProductID = pp.szProductID GROUP BY oo.szO
 $response = mysqli_query($connection, $query);
 
 if($response){
-	echo '<table cellspacing="5" cellpadding="5" ><h4></h4>
+	echo '<table class="center" cellspacing="5" cellpadding="5" ><h4></h4>
 	<col width = "200">
 	<col width = "200">
 	<col width = "200">

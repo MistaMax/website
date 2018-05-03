@@ -4,7 +4,7 @@
 ?>
 <section class="main-container">
 <div class="main-wrapper">
-                        <h2>View_Alerts</h2>
+                        <h2>View Alerts</h2>
 						<?php 
 //$query = "SELECT * FROM `inventory`";
 $query = "SELECT 
@@ -21,7 +21,7 @@ $response = mysqli_query($connection, $query);
 
 echo "<h2>EXIPIRATION ALERT</h2>";
 if($response){
-	echo '<table cellspacing="5" cellpadding="5" >
+	echo '<table class="center" cellspacing="5" cellpadding="5" >
 	<col width = "200">
 	<col width = "200">
 	<col width = "200">
@@ -62,7 +62,7 @@ $response = mysqli_query($connection, $query);
 
 echo "<h2>RUNNING LOW (Less than 15 Items)</h2>";
 if($response){
-	echo '<table cellspacing="5" cellpadding="5" >
+	echo '<table class="center" cellspacing="5" cellpadding="5" >
 	<col width = "200">
 	<col width = "200">
 	<col width = "200">
