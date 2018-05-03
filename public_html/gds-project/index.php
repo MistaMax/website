@@ -29,6 +29,10 @@
 				<a href="view_alerts.php">View Alerts</a>
 				</div>
 				</div>
+			</br>
+			</br>
+			</br>
+			</br>
 				<?php
 			}
 			else{
