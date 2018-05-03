@@ -28,7 +28,7 @@ if (isset($_POST['submit'])){
 		echo '<h1 class="display-4 font-weight-normal"> Product: ' . $row['szProductName'] . "</br>Old Price: " . $row['dbPrice'] . '</h1>';
 		
 		echo '<h1 class="display-4 font-weight-normal"> Enter new Price:</h1>';
-		echo '<form action="Changed.php" method="POST">
+		echo '<form class="signup-form" action="Changed.php" method="POST">
 				<input type="hidden" name="P_ID" value=' . $P_ID .'>
 				<input type="hidden" name="From" value="P">
 				<input type="text" name="New_Val" placeholder="Price">
@@ -45,7 +45,7 @@ if (isset($_POST['submit'])){
 		echo '<h1 class="display-4 font-weight-normal"> Old Name: ' . $row['szProductName'] . '</h1>';
 		
 		echo '<h1 class="display-4 font-weight-normal"> Enter new Name:</h1>';
-		echo '<form action="Changed.php" method="POST">
+		echo '<form class="signup-form" action="Changed.php" method="POST">
 				<input type="hidden" name="P_ID" value=' . $P_ID .'>
 				<input type="hidden" name="From" value="N">
 				<input type="text" name="New_Val" placeholder="Name">
@@ -62,7 +62,7 @@ if (isset($_POST['submit'])){
 		echo '<h1 class="display-4 font-weight-normal">Product: ' . $row['szProductName'] . "</br>Old Quantity: " . $row['iQuantity'] . '</h1>';
 		
 		echo '<h1 class="display-4 font-weight-normal"> Enter new Quantity:</h1>';
-		echo '<form action="Changed.php" method="POST">
+		echo '<form class="signup-form" action="Changed.php" method="POST">
 				<input type="hidden" name="P_ID" value=' . $P_ID .'>
 				<input type="hidden" name="From" value="Q">
 				<input type="text" name="New_Val" placeholder="Quantity">
@@ -79,7 +79,7 @@ if (isset($_POST['submit'])){
 		echo '<h1 class="display-4 font-weight-normal"> Product: ' . $row['szProductName'] . "</br>Old Location: " . $row['szLocation'] . '</h1>';
 		
 		echo '<h1 class="display-4 font-weight-normal"> Enter new Location:</h1>';
-		echo '<form action="Changed.php" method="POST">
+		echo '<form class="signup-form" action="Changed.php" method="POST">
 				<input type="hidden" name="P_ID" value=' . $P_ID .'>
 				<input type="hidden" name="From" value="L">
 				<input type="text" name="New_Val" placeholder="Location">
