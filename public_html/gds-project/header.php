@@ -39,7 +39,7 @@ session_start();
 								<input class="inp" type="password" name="pwd" placeholder="PASSWORD">
 								<button class="loginBut" type="submit" name="submit">LOGIN</button>
                             </form>';
-                        if(strpos($_SERVER['REQUEST_URI'], '/gds-project/index.php') == false){
+                        if(strpos($_SERVER['REQUEST_URI'], '/gds-project/index.php') !== true){
                             header('Location: index.php');
                             die();
                         }
