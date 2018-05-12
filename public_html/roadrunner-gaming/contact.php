@@ -16,14 +16,14 @@
 <body id="body-over">
     <nav class="site-header sticky-top py-1" id="menu-table">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
-            <a class="py-2" href="nav.html">
+            <a class="py-2" href="nav.php">
                 <img src="RRGaming_Logo.png" id="logo-badge" width="50" height="50">
             </a>
-            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="index.html">Home</a>
-            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="store.html">Store</a>
-            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="about.html">About</a>
-            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="contact.html">Contact</a>
-            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="events.html">Events</a>
+            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="index.php">Home</a>
+            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="store.php">Store</a>
+            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="about.php">About</a>
+            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="contact.php">Contact</a>
+            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="events.php">Events</a>
         </div>
     </nav>
     <div class="container-fluid">

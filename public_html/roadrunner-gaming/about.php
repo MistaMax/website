@@ -10,26 +10,46 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
-    <title>GDS</title>
+    <title>Roadrunner Gaming</title>
 </head>
 
 <body id="body-over">
     <nav class="site-header sticky-top py-1" id="menu-table">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
-            <a class="py-2" href="nav.html">
-                <img src="cart.gif" id="logo-badge" width="60" height="60">
+            <a class="py-2" href="nav.php">
+                <img src="RRGaming_Logo.png" id="logo-badge" width="50" height="50">
             </a>
             <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="index.php">Home</a>
-            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="index.php">Login</a>
+            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="store.php">Store</a>
+            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="about.php">About</a>
+            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="contact.php">Contact</a>
+            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="events.php">Events</a>
         </div>
     </nav>
     <div class="container-fluid">
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 font-weight-normal">About Roadrunner Gaming...</h1>
+                <p class="lead font-weight-normal">WORK IN PROGRESS
+                </p>
+            </div>
+        </div>
         <div class="row">
             <div class="col">
                 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
                     <div class="col-md-5 p-lg-5 mx-auto my-5">
-                        <h1 class="display-4 font-weight-normal">Grocery Delivery System</h1>
-                        <p class="lead font-weight-normal">We supply people with groceries on demand</p>
+                        <h1 class="display-4 font-weight-normal">El Presidente</h1>
+                        <h2 class="lead font-weight-normal">Leo Soranio</h2>
+                        <a class="btn btn-outline-secondary" href="#">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
+                    <div class="col-md-5 p-lg-5 mx-auto my-5">
+                        <h1 class="display-4 font-weight-normal">El Vice Presidente</h1>
+                        <h2 class="lead font-weight-normal">Hao Nguyen</h2>
+                        <a class="btn btn-outline-secondary" href="#">Contact Me</a>
                     </div>
                 </div>
             </div>

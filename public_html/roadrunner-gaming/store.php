@@ -16,35 +16,27 @@
 <body id="body-over">
     <nav class="site-header sticky-top py-1" id="menu-table">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
-            <a class="py-2" href="nav.html">
+            <a class="py-2" href="nav.php">
                 <img src="RRGaming_Logo.png" id="logo-badge" width="50" height="50">
             </a>
-            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="index.html">Home</a>
-            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="store.html">Store</a>
-            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="about.html">About</a>
-            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="contact.html">Contact</a>
-            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="events.html">Events</a>
+            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="index.php">Home</a>
+            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="store.php">Store</a>
+            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="about.php">About</a>
+            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="contact.php">Contact</a>
+            <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="events.php">Events</a>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
-                    <div class="col-md-5 p-lg-5 mx-auto my-5">
-                        <h1 class="display-4 font-weight-normal">Roadrunner Gaming</h1>
-                        <p class="lead font-weight-normal">We are a gaming club located in San Antonio, here to be exact</p>
-                    </div>
-                </div>
-            </div>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 font-weight-normal">Roadrunner Gaming Store</h1>
+            <p class="lead font-weight-normal">Buy Merch Here</p>
+            <a class="btn btn-outline-secondary" href="store.php">Coming soon</a>
         </div>
-        <div class="row">
-            <div class="col">
-                <iframe width="100%" height="500" scrolling="no" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCUrq9SGaK6YIe6ZLYcT80Gun-JO6Ui9vk
-                          &q=Universite+of+Texas+at+San+Antonio" allowfullscreen>
-                </iframe>
-            </div>
-        </div>
+        <div class="product-device box-shadow d-none d-md-block"></div>
+        <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
