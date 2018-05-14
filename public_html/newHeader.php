@@ -9,7 +9,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
     <title>Max Crookshanks</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
 </head>
 <body id="body-over">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
