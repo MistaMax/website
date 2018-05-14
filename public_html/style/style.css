@@ -1,0 +1,9 @@
+#body-over {
+    background-color:black;
+    background-image:url(scubame.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    //background-color:rgb(3, 64, 97);
+}
