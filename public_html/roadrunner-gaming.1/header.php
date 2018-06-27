@@ -19,7 +19,7 @@ session_start();
 	<!--<link rel="stylesheet" type="text/css" href="style.css">-->
 </head>
 <body id="body-over">
-<nav class="navbar navbar-expand-lg navbar-light bg-rrgblue text-rrgorange">
+<nav class="navbar navbar-expand-lg bg-rrgblue text-rrgorange">
 <a class="navbar-brand" href="index.php"><img src="RRGaming_Logo.png" id="logo-badge" width="50" height="50">Roadrunner Gaming</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
     aria-expanded="false" aria-label="Toggle navigation">
