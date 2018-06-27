@@ -34,13 +34,24 @@ session_start();
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="store.php">Store</a>
+            <a class="nav-link" href="store.php">Store
+                <span class="sr-only">(current)</span>
+            </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="events.php">Events</a>
+            <a class="nav-link" href="events.php">Events
+                <span class="sr-only">(current)</span>
+            </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="about.php">About</a>
+            <a class="nav-link" href="about.php">About
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.php">Contact Us
+                <span class="sr-only">(current)</span>
+            </a>
         </li>
     </ul>
     <!--<form class="form-inline my-2 my-lg-0">
