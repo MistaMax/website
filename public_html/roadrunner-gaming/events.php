@@ -5,7 +5,7 @@ include_once 'header.php';
         <div class="row">
             <div class="col">
                 <iframe class="twitch-vid" src="https://player.twitch.tv/?channel=rrgsa" frameborder="0" allowfullscreen="true" scrolling="no" height="800" width="75%"></iframe>
-                <iframe class="twitch-chat" src="https://www.twitch.tv/rrgsa/chat?popout=" frameborder="0" scrolling="no" height="800" width="24%"></iframe>
+                <iframe src="https://www.twitch.tv/embed/rrgsa/chat" frameborder="0" scrolling="no" height="800" width="24%"></iframe>
             </div>
         </div>
         <div class="row">
