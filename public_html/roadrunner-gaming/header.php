@@ -16,6 +16,7 @@ session_start();
         crossorigin="anonymous">
     <!--<link rel="stylesheet" href="../style/style.css">-->
     <title>Roadrunner Gaming</title>
+    <link rel="shortcut icon" type="RRGaming_Logo.png" href="favicon.ico" />
 	<!--<link rel="stylesheet" type="text/css" href="style.css">-->
 </head>
 <body id="body-over">
