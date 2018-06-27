@@ -30,27 +30,37 @@ session_start();
     <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
             <a class="nav-link" href="index.php">Home
-                <span class="sr-only">(current)</span>
+            <?php if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/index.php"){
+                            echo '<span class="sr-only">(current)</span>';
+            }?>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="store.php">Store
-                <span class="sr-only">(current)</span>
+            <?php if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/store.php"){
+                            echo '<span class="sr-only">(current)</span>';
+            }?>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="events.php">Events
-                <span class="sr-only">(current)</span>
+            <?php if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/events.php"){
+                            echo '<span class="sr-only">(current)</span>';
+            }?>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="about.php">About
-                <span class="sr-only">(current)</span>
+            <?php if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/about.php"){
+                            echo '<span class="sr-only">(current)</span>';
+            }?>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="contact.php">Contact Us
-                <span class="sr-only">(current)</span>
+            <?php if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/contact.php"){
+                            echo '<span class="sr-only">(current)</span>';
+            }?>
             </a>
         </li>
     </ul>
