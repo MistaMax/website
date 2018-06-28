@@ -29,45 +29,67 @@ session_start();
 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="index.php">Home
-            <?php if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/index.php"){
-                            echo '<span class="sr-only">(current)</span>';
-            }?>
-            </a>
-        </li>
-        <li class="nav-item">
+        <?php
+        if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/index.php"){
+            echo '<li class="nav-item active">
+                <a class="nav-link" href="index.php">Home
+                <span class="sr-only">(current)</span></a>
+                </li>';
+        }
+        else{
+            echo '<li class="nav-item">
+                <a class="nav-link" href="index.php">Home</a>
+            </li>';
+        }
+
+        if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/store.php"){
+            echo '<li class="nav-item active">
             <a class="nav-link" href="store.php">Store
-            <?php if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/store.php"){
-                            echo '<span class="sr-only">(current)</span>';
-            }?>
-            </a>
-        </li>
-        <li class="nav-item">
+            <span class="sr-only">(current)</span></a>
+        </li>';
+        }
+        else{
+            echo '<li class="nav-item">
+                    <a class="nav-link" href="store.php">Store</a>
+                </li>';
+        }
+
+        if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/events.php"){
+            echo '<li class="nav-item active">
             <a class="nav-link" href="events.php">Events
-            <?php if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/events.php"){
-                            echo '<span class="sr-only">(current)</span>';
-            }?>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="about.php">About
-            <?php if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/about.php"){
-                            echo '<span class="sr-only">(current)</span>';
-            }?>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="contact.php">Contact Us
-            <?php if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/contact.php"){
-                            echo '<span class="sr-only">(current)</span>';
-            }?>
-            </a>
-        </li>
+            <span class="sr-only">(current)</span></a>
+            </li>';
+        }
+        else{
+            echo '<li class="nav-item">
+                <a class="nav-link" href="events.php">Events</a>
+                </li>';
+        }
+
+        if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/about.php"){
+            echo'<li class="nav-item active">
+                    <a class="nav-link" href="about.php">About
+                    <span class="sr-only">(current)</span></a>
+                </li>';
+        }
+        else{
+            echo'<li class="nav-item">
+                    <a class="nav-link" href="about.php">About</a>
+                </li>';
+        }
+
+        if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/contact.php"){
+            echo '<li class="nav-item active">
+                    <a class="nav-link" href="contact.php">Contact Us
+                    <span class="sr-only">(current)</span></a>
+                </li>';
+        }
+        else{
+            echo '<li class="nav-item">
+                    <a class="nav-link" href="contact.php">Contact Us</a>
+                </li>';
+        }
+        ?>
     </ul>
-    <!--<form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>-->
 </div>
 </nav>
