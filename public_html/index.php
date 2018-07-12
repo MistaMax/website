@@ -8,14 +8,7 @@
                     <div class="col-md-5 p-lg-5 mx-auto my-5">
                         <h1 class="display-4 font-weight-normal">Max Crookshanks</h1>
                         <p class="lead font-weight-normal">This website has everything you need to know about me</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
-                    <div class="col-md-5 p-lg-5 mx-auto my-5">
+                        <br>
                         <h1 class="display-4 font-weight-normal">Summary</h1>
                         <p class="lead font-weight-normal">Im max</p>
                     </div>
