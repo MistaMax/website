@@ -1,5 +1,5 @@
 <?php
-	include_once 'newHeader.php';
+	include 'newHeader.php';
 ?>
 <div class="container-fluid">
         <div class="row">
@@ -57,5 +57,5 @@
         </div>
 </div>
 <?php
-	include_once 'footer.php';
+	include 'footer.php';
 ?>
