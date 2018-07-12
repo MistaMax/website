@@ -30,16 +30,6 @@
     //color:rgb(240,131,6);
 }
 
-#body-over {
-    background-color:black;
-    background-image:url(img/scubame.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    //background-color:rgb(3, 64, 97);
-}
-
 #logo-badge{
     align-self:left;
 }
