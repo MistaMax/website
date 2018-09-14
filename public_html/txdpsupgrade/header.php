@@ -15,7 +15,7 @@ session_start();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <!--<link rel="stylesheet" href="../style/style.css">-->
-    <title>Roadrunner Gaming</title>
+    <title>TxDPS</title>
     <link rel="shortcut icon" type="RRGaming_Logo.png" href="favicon.ico" />
 	<!--<link rel="stylesheet" type="text/css" href="style.css">-->
 </head>
@@ -40,54 +40,6 @@ session_start();
             echo '<li class="nav-item">
                 <a class="nav-link" href="index.php">Home</a>
             </li>';
-        }
-
-        if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/store.php"){
-            echo '<li class="nav-item active">
-            <a class="nav-link" href="store.php">Store
-            <span class="sr-only">(current)</span></a>
-        </li>';
-        }
-        else{
-            echo '<li class="nav-item">
-                    <a class="nav-link" href="store.php">Store</a>
-                </li>';
-        }
-
-        if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/events.php"){
-            echo '<li class="nav-item active">
-            <a class="nav-link" href="events.php">Events
-            <span class="sr-only">(current)</span></a>
-            </li>';
-        }
-        else{
-            echo '<li class="nav-item">
-                <a class="nav-link" href="events.php">Events</a>
-                </li>';
-        }
-
-        if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/about.php"){
-            echo'<li class="nav-item active">
-                    <a class="nav-link" href="about.php">About
-                    <span class="sr-only">(current)</span></a>
-                </li>';
-        }
-        else{
-            echo'<li class="nav-item">
-                    <a class="nav-link" href="about.php">About</a>
-                </li>';
-        }
-
-        if($_SERVER['REQUEST_URI'] == "/roadrunner-gaming.1/contact.php"){
-            echo '<li class="nav-item active">
-                    <a class="nav-link" href="contact.php">Contact Us
-                    <span class="sr-only">(current)</span></a>
-                </li>';
-        }
-        else{
-            echo '<li class="nav-item">
-                    <a class="nav-link" href="contact.php">Contact Us</a>
-                </li>';
         }
         ?>
     </ul>
