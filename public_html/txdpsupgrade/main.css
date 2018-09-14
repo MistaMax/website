@@ -1,0 +1,99 @@
+#menu-table{
+    background-color:rgba(3, 64, 97,1);
+    text-align: center;
+    font-size: 25px;
+    color: rgba(240,131,6,1);
+}
+
+#menu-item {
+    background-color:inherit;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(240,131,6,1);
+    border-width:0px;
+    position: relative;
+    bottom: 0;
+}
+
+#menu-item:hover {
+    cursor: pointer;
+    text-decoration: none;
+    //color: white;
+}
+
+#title-item {
+    background-color:rgb(3, 64, 97);
+    //background-color: white;
+    text-align: center;
+    color:rgb(240,131,6);
+    float: left;
+    //color:rgb(240,131,6);
+}
+
+#body-over {
+    background-color:black;
+    background-image:url(campus.jpg);
+    //background-image:url(RRGaming_Logo.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    //background-color:rgb(3, 64, 97);
+}
+
+#logo-badge{
+    align-self:left;
+}
+
+#menu-row{
+    display:flex;
+}
+
+#main-content{
+    position: relative;
+    background-color:rgba(240,131,6,0.5);
+    height: 90%;
+    width: inherit;
+    position: absolute;
+}
+
+.bg-semilight{
+    background-color:rgba(255,255,255,0.9);
+}
+
+#main-cont{
+    background-color:white;
+}
+
+.bg-rrgblue {
+    background-color:rgb(3, 64, 97);
+}
+
+.bg-rrgorange {
+    background-color:rgba(240,131,6,1);
+}
+
+.text-rrgblue {
+    color:rgb(3, 64, 97);
+}
+
+.text-rrgorange {
+    color:rgba(240,131,6,1);
+}
+
+.nav-block {
+    background-color:rgba(3, 64, 97, 0.75);
+    color:rgb(240,131,6);
+}
+
+.nav-block:hover{
+    background-color:rgba(240,131,6,0.75);
+    color: rgb(3, 64, 97);
+}
+
+.twitch-vid {
+    background-color:black;
+}
+.twitch-chat {
+    background-color:white;
+}
