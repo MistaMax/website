@@ -33,9 +33,6 @@ session_start();
     <li class="nav-item active">
         <a class="nav-link" href="signup.php">Sign Up</a>
     </li>
-    <li class="nav-item active">
-        <a class="nav-link" href="signin.php">Sign In</a>
-    </li>
     </ul>
     <?php
         if(isset($_SESSION['u_id']))
@@ -50,6 +47,14 @@ session_start();
             Logout
             </button>
             </form>
+            </div>';
+        }
+        else
+        {
+            echo '<div class="my-2 my-lg-0 mr-sm-2 user-name">
+            <a class="nav-link" href="signin.php">
+            Sign In
+            </a>
             </div>';
         }
     ?>
