@@ -34,30 +34,30 @@ session_start();
     if(isset($_SESSION['u_id']))
     {
         echo '<li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Workers
         </a>
-        <ul class="nav-link dropdown-toggle">
-            <li><a class="dropdown-item" href="#">Find</a></li>
-            <li><a class="dropdown-item" href="#">Add</a></li>
-            <li><a class="dropdown-item" href="#">Display</a></li>
-        </ul>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Find</a>
+            <a class="dropdown-item" href="#">Add</a>
+            <a class="dropdown-item" href="#">Display</a>
+        </div>
         </li>
         <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Certifications
         </a>
-        <ul class="nav-link dropdown-toggle">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Find</a></li>
             <li><a class="dropdown-item" href="#">Add</a></li>
             <li><a class="dropdown-item" href="#">Display</a></li>
         </ul>
         </li>
         <li class="nav-item dropdown-toggle">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Work Orders
         </a>
-        <ul class="nav-link dropdown-toggle">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Find</a></li>
             <li><a class="dropdown-item" href="#">Add</a></li>
             <li><a class="dropdown-item" href="#">Display</a></li>
