@@ -33,7 +33,6 @@ session_start();
     <li class="nav-item active">
         <a class="nav-link" href="signup.php">Sign Up</a>
     </li>
-    </ul>
     <?php
         if(isset($_SESSION['u_id']))
         {
@@ -58,5 +57,6 @@ session_start();
             </div>';
         }
     ?>
+    </ul>
 </div>
 </nav>
