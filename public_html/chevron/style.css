@@ -38,3 +38,8 @@
     border-bottom-width: 2px;
     cursor: pointer;
 }
+
+.user-name
+{
+    font-size:20px;
+}
