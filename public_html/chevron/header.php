@@ -33,14 +33,35 @@ session_start();
     <?php
     if(isset($_SESSION['u_id']))
     {
-        echo '<li class="nav-item active">
-        <a class="nav-link" href="#">Workers</a>
+        echo '<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Workers
+        </a>
+        <ul class="nav-link dropdown-toggle">
+            <li><a class="dropdown-item" href="#">Find</a></li>
+            <li><a class="dropdown-item" href="#">Add</a></li>
+            <li><a class="dropdown-item" href="#">Display</a></li>
+        </ul>
         </li>
-        <li class="nav-item active">
-        <a class="nav-link" href="#">Certifications</a>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Certifications
+        </a>
+        <ul class="nav-link dropdown-toggle">
+            <li><a class="dropdown-item" href="#">Find</a></li>
+            <li><a class="dropdown-item" href="#">Add</a></li>
+            <li><a class="dropdown-item" href="#">Display</a></li>
+        </ul>
         </li>
-        <li class="nav-item active">
-        <a class="nav-link" href="#">Work Orders</a>
+        <li class="nav-item dropdown-toggle">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Work Orders
+        </a>
+        <ul class="nav-link dropdown-toggle">
+            <li><a class="dropdown-item" href="#">Find</a></li>
+            <li><a class="dropdown-item" href="#">Add</a></li>
+            <li><a class="dropdown-item" href="#">Display</a></li>
+        </ul>
         </li>';
     }
     else
