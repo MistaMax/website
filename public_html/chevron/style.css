@@ -19,5 +19,21 @@
     border-right: none;
     border-bottom-color: black;
     border-bottom-width: 2px;
-    
+}
+
+.fancy-button
+{
+    color:black;
+    background-color:rgba(255,255,255,0.25);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom-width: 1px;
+    border-bottom-color:black;
+}
+
+.fancy-button:hover
+{
+    background-color:rgba(255,255,255,0.5);
+    border-bottom-width: 2px;
 }
