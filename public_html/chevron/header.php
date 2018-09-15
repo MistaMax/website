@@ -20,7 +20,7 @@ session_start();
 </head>
 <body id="body-over">
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-<a class="navbar-brand" href="index.php"><img src="RRGaming_Logo.png" id="logo-badge" width="50" height="50">Chevron Work Orders</a>
+<a class="navbar-brand" href="index.php"><img src="chevron.png" id="logo-badge" width="50" height="50">Chevron Work Orders</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -31,10 +31,10 @@ session_start();
         <a class="nav-link" href="index.php">Home</a>
     </li>
     <li class="nav-item active">
-        <a class="nav-link" href="index.php">Sign Up</a>
+        <a class="nav-link" href="signup.php">Sign Up</a>
     </li>
     <li class="nav-item active">
-        <a class="nav-link" href="index.php">Sign In</a>
+        <a class="nav-link" href="signin.php">Sign In</a>
     </li>
     </ul>
 </div>
