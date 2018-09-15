@@ -10,7 +10,7 @@
                     <form class="login-form" action="includes/login.inc.php" method="POST">
                     <p class="lead font-weight-normal"><input class="fancy-input" type="text" name="uid" placeholder="Username"></p>
                     <p class="lead font-weight-normal"><input class="fancy-input" type="password" name="pwd" placeholder="Password"></p>
-                    <p class="lead font-weight-normal"><button type="submit" name="submit">Sign In</button></p>
+                    <p class="lead font-weight-normal"><button class="fancy-button" type="submit" name="submit">Sign In</button></p>
 		</form>
 					</div>
 				</div>
