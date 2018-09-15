@@ -48,20 +48,20 @@ session_start();
         Certifications
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Find</a></li>
-            <li><a class="dropdown-item" href="#">Add</a></li>
-            <li><a class="dropdown-item" href="#">Display</a></li>
-        </ul>
+            <a class="dropdown-item" href="#">Find</a>
+            <a class="dropdown-item" href="#">Add</a>
+            <a class="dropdown-item" href="#">Display</a>
+        </div>
         </li>
         <li class="nav-item dropdown-toggle">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Work Orders
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Find</a></li>
-            <li><a class="dropdown-item" href="#">Add</a></li>
-            <li><a class="dropdown-item" href="#">Display</a></li>
-        </ul>
+            <a class="dropdown-item" href="#">Find</a>
+            <a class="dropdown-item" href="#">Add</a>
+            <a class="dropdown-item" href="#">Display</a>
+        </div>
         </li>';
     }
     else
