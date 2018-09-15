@@ -30,9 +30,26 @@ session_start();
         <li class="nav-item active">
         <a class="nav-link" href="index.php">Home</a>
     </li>
-    <li class="nav-item active">
+    <?php
+    if(isset($_SESSION['u_id']))
+    {
+        echo '<li class="nav-item active">
+        <a class="nav-link" href="#">Workers</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Certifications</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Work Orders</a>
+        </li>';
+    }
+    else
+    {
+        echo '<li class="nav-item active">
         <a class="nav-link" href="signup.php">Sign Up</a>
-    </li>
+    </li>';
+    }
+    ?>
 </ul>
     <?php
         if(isset($_SESSION['u_id']))
