@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
 				}elseif ($hashedPwdCheck == true){
 					//login
 					$_SESSION['u_id'] = $row['szUsername'];
-					header("Location: ../signin.php?login=success");
+					header("Location: ../index.php?login=success");
 					exit();
 				}
 			}

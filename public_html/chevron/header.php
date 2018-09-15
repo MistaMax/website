@@ -37,5 +37,11 @@ session_start();
         <a class="nav-link" href="signin.php">Sign In</a>
     </li>
     </ul>
+    <?php
+        if(isset($_SESSION['u_id']))
+        {
+            echo '<div class="my-2 my-lg-0 mr-sm-2">'.$_SESSION['u_id'].'</div>';
+        }
+    ?>
 </div>
 </nav>
