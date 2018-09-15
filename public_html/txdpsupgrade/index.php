@@ -4,10 +4,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <div class="position-relative overflow-hidden p-12 p-md-12 m-md-12 text-center bg-semilight">
-                    <div class="col-md-12 p-lg-12 mx-auto my-12">
-                        <h1 class="display-4 font-weight-normal">Roadrunner Gaming</h1>
-                        <p class="lead font-weight-normal">We are a gaming club located in San Antonio, here to be exact</p>
+                <div class="position-relative overflow-hidden p-5 p-md-5 m-md-5 text-center bg-semilight">
+                    <div class="col-md-5 p-lg-5 mx-auto my-5">
+                        <h1 class="display-4 font-weight-normal">Texas DPS</h1>
+                        <p class="lead font-weight-normal">The Texas Department of Public Safety</p>
                     </div>
                 </div>
             </div>
