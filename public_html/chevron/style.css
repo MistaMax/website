@@ -3,3 +3,9 @@
     background-color:rgb(0,128,255);
     //background-image:url(chevronback.jpg);
 }
+
+.central-container{
+    padding-left:25%;
+    padding-right:25%;
+    background-color:rgba(255,255,255,0.5);
+}
