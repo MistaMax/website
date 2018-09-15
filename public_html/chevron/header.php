@@ -51,7 +51,7 @@ session_start();
         }
         else
         {
-            echo '<div class="my-2 my-lg-0 mr-sm-2 user-name">
+            echo '<div class="my-2 my-lg-0 mr-sm-2 user-name-container">
             <a class="user-name nav-item nav-link" href="signin.php">
             Sign In
             </a>
