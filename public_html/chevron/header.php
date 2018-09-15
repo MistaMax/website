@@ -40,7 +40,7 @@ session_start();
     <?php
         if(isset($_SESSION['u_id']))
         {
-            echo '<div class="my-2 my-lg-0 mr-sm-2">'.$_SESSION['u_id'].'</div>';
+            echo '<div class="my-2 my-lg-0 mr-sm-2"><form action="includes/logout.inc.php><button class="fancy-button" type="submit" name="Logout">Logout</button></form>">User: '.$_SESSION['u_id'].'</div>';
         }
     ?>
 </div>
