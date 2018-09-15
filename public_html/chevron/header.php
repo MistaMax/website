@@ -27,14 +27,14 @@ session_start();
 </button>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-        <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="index.php">Home</a>
+        <li class="nav-item active">
+        <a class="nav-link" href="index.php">Home</a>
     </li>
     <li class="nav-item active">
-        <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="signIn.php">Sign In</a>
+        <a class="nav-link" href="index.php">Sign Up</a>
     </li>
     <li class="nav-item active">
-        <a class="py-2 d-none d-md-inline-block display-4 align-bottom" id="menu-item" href="signup.php">Sign Up</a>
+        <a class="nav-link" href="index.php">Sign In</a>
     </li>
     </ul>
 </div>
