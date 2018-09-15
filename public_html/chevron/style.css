@@ -41,6 +41,17 @@
 
 .user-name
 {
-    font-size:20px;
+    font-size:30px;
+    color:black;
+    border-right:none;
+    border-top:none;
+    border-left-width:2px;
+    border-left-color:black;
+    border-bottom-width: 2px;
+    border-bottom-color:black;
+}
+
+.user-name:hover
+{
     color:black;
 }
