@@ -40,7 +40,8 @@ session_start();
     <?php
         if(isset($_SESSION['u_id']))
         {
-            echo '<div class="my-2 my-lg-0 mr-sm-2 user-name">User: '.
+            echo '<div class="my-2 my-lg-0 mr-sm-2 user-name">
+            <img width="50" height="50" src="load.gif">'.
             $_SESSION['u_id'].
             '</div>
             <div class="my-2 my-lg-0 mr-sm-2">
