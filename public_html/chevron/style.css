@@ -17,5 +17,7 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px black;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    
 }
