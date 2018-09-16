@@ -68,9 +68,9 @@
                                 <p class="lead font-weight-normal">
                                 <select name="type">
                                 <option value="workerID">workerID</option>
-                                <option value="firstName">First Name</option>
-                                <option value="middleName">Middle Name</option>
-                                <option value="lastName">Last Name</option>
+                                <option value="first_name">First Name</option>
+                                <option value="middle_name">Middle Name</option>
+                                <option value="last_name">Last Name</option>
                                 <option value="sex">Sex</option>
                                 </select>
                                 </p>
