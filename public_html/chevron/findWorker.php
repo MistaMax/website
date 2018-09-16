@@ -31,6 +31,7 @@
                                     {
                                         header("Location: findWorker.php?find=".$W_type);
                                     }
+                                    echo $result;
                                     echo '<table class="center" cellspacing="5" cellpadding="5" ><h4></h4>
 	                                    <col width = "200">
 	                                    <col width = "200">
