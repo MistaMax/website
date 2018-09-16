@@ -23,7 +23,7 @@
 
                                 if(empty($W_type) || empty($W_string))
                                 {
-                                    header("Location: findWorker.php?find=error1");
+                                    header("Location: findWorker.php?find=empty");
                                 }
                                 else
                                 {
