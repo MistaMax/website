@@ -46,7 +46,7 @@
 	                                    <td align="left"><b>Last Name</b></td>
 	                                    <td align="left"><b>Sex</b></td>
 	                                    </tr>';
-	                                    while($row = mysqli_fetch_array($response)){
+	                                    while($row = mysqli_fetch_array($result)){
 		                                    echo '<tr><td align="left">'.
 		                                    $row['workerID'] . '</td><td align="left">'.
 		                                    $row['first_name'] . '</td><td align="left">'.
