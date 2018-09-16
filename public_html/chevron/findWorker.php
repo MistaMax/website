@@ -1,18 +1,25 @@
 <?php
+    include_once 'header.php';
+    if(!isset($_SESSION['u_id']))
+    {
+        header("Location: index.php");
+    }
+    include 'includes/dbh.php';
+?>
+
+<div class="central-container">
+        <div class="row">
+            <div class="col">
+                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
+					<div class="col-md-12 p-lg-5 mx-auto my-5">
+                        <?php
                             if(isset($_POST['submit']))
                             {
-                                $W_type = $_POST['type'];
-                                $W_string = $_POST['search'];
-
-    include 'includes/dbh.php';
-                                echo '<div class="central-container">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
-                                            <div class="col-md-12 p-lg-5 mx-auto my-5">
-                                <h1 class="display-4 font-weight-normal">
+                                echo '<h1 class="display-4 font-weight-normal">
                                 Worker Search Results
                                 </h1>';
+                                $W_type = $_POST['type'];
+                                $W_string = $_POST['search'];
 
                                 if(empty($W_type) || empty($W_string))
                                 {
@@ -27,7 +34,6 @@
                                     {
                                         header("Location: findWorker.php?find=".$W_type);
                                     }
-                                    //echo $result;
                                     echo '<table class="center" cellspacing="5" cellpadding="5" ><h4></h4>
 	                                    <col width = "200">
 	                                    <col width = "200">
@@ -43,9 +49,9 @@
 	                                    while($row = mysqli_fetch_array($response)){
 		                                    echo '<tr><td align="left">'.
 		                                    $row['workerID'] . '</td><td align="left">'.
-		                                    $row['firstName'] . '</td><td align="left">'.
-		                                    $row['middleName'] . '</td><td align="left">' .
-		                                    $row['lastName'] . '</td><td align="left">' .
+		                                    $row['first_name'] . '</td><td align="left">'.
+		                                    $row['middle_name'] . '</td><td align="left">' .
+		                                    $row['last_name'] . '</td><td align="left">' .
 		                                    $row['sex'] . '</td><td align="left">';
 		                                    echo '</tr>';
 	                                    }
@@ -55,18 +61,7 @@
                             }
                             else
                             {
-                                include_once 'header.php';
-    if(!isset($_SESSION['u_id']))
-    {
-        header("Location: index.php");
-    }
-    include 'includes/dbh.php';
-                                echo '<div class="central-container">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
-                                            <div class="col-md-12 p-lg-5 mx-auto my-5">
-                                <h1 class="display-4 font-weight-normal">
+                                echo '<h1 class="display-4 font-weight-normal">
                                 Find Workers
                                 </h1>
                                 <form class="find-worker-form" action="findWorker.php" method="POST">
