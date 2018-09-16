@@ -58,10 +58,8 @@
 	                                    echo '</table>';
                                 }
 
-                            }
-                            else
-                            {
-                                echo '<h1 class="display-4 font-weight-normal">
+                            }?>
+                                <h1 class="display-4 font-weight-normal">
                                 Find Workers
                                 </h1>
                                 <form class="find-worker-form" action="findWorker.php" method="POST">
@@ -79,7 +77,6 @@
                                 </p>
                                 <p class="lead font-weight-normal"><button class="fancy-button" type="submit" name="submit">Find Worker</button></p>
                                 </form>';
-                            }?>
 </div>
 </div>
 </div>
