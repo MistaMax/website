@@ -67,7 +67,7 @@
                                 </h1>
                                 <form class="find-worker-form" action="findWorker.php" method="POST">
                                 <p class="lead font-weight-normal">
-                                <select name="type">
+                                <select class="fancy-input" name="type">
                                 <option value="workerID">workerID</option>
                                 <option value="first_name">First Name</option>
                                 <option value="middle_name">Middle Name</option>

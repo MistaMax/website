@@ -35,7 +35,7 @@
                                         header("Location: findCert.php?find=none");
                                     }
                                     echo '<table class="center" cellspacing="5" cellpadding="5" ><h4></h4>
-	                                    <col width = "400">
+	                                    <col width = "200">
 	                                    <col width = "400">
 	                                    <tr><td align="left"><b>Certification ID</b></td>
 	                                    <td align="left"><b>Certification Name</b></td>
@@ -47,18 +47,18 @@
 		                                    echo '</tr>';
 	                                    }
                                         echo '</table>';
-                                        echo '<p class="lead font-weight-normal"><a class="user-name nav-item nav-link" href="findCert.php">Try another search</a></p>';
+                                        echo '<br/><br/><p class="lead font-weight-normal"><a class="user-name nav-item nav-link" href="findCert.php">Try another search</a></p>';
                                 }
 
                             }
                             else
                             {
                                 echo '<h1 class="display-4 font-weight-normal">
-                                Find Workers
+                                Find Certifications
                                 </h1>
                                 <form class="find-worker-form" action="findCert.php" method="POST">
                                 <p class="lead font-weight-normal">
-                                <select name="type">
+                                <select class="fancy-input" name="type">
                                 <option value="certID">Certification ID</option>
                                 <option value="certName">Certification Name</option>
                                 </select>
