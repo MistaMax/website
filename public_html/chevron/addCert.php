@@ -1,9 +1,9 @@
 <?php
     include_once header.php;
-    if(!(isset($_SESSION['u_id'])))
-    {
-        header("Location: index.php");
-    }
+    #if(!(isset($_SESSION['u_id'])))
+    #{
+    #    header("Location: index.php");
+    #}
 ?>
 <div class="central-container">
         <div class="row">
