@@ -38,8 +38,8 @@ session_start();
         Workers
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Find</a>
-            <a class="dropdown-item" href="#">Add</a>
+            <a class="dropdown-item" href="findWorker.php">Find</a>
+            <a class="dropdown-item" href="addWorker.php">Add</a>
             <a class="dropdown-item" href="#">Display</a>
         </div>
         </li>
@@ -48,8 +48,8 @@ session_start();
         Certifications
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Find</a>
-            <a class="dropdown-item" href="#">Add</a>
+            <a class="dropdown-item" href="findCert.php">Find</a>
+            <a class="dropdown-item" href="addCert.php">Add</a>
             <a class="dropdown-item" href="#">Display</a>
         </div>
         </li>
@@ -58,8 +58,8 @@ session_start();
         Work Orders
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Find</a>
-            <a class="dropdown-item" href="#">Add</a>
+            <a class="dropdown-item" href="findWorkOrder.php">Find</a>
+            <a class="dropdown-item" href="addWorkOrder.php">Add</a>
             <a class="dropdown-item" href="#">Display</a>
         </div>
         </li>';
