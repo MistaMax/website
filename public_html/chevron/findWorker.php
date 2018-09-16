@@ -1,7 +1,14 @@
 <?php
                             if(isset($_POST['submit']))
                             {
-                                
+                                $W_type = $_POST['type'];
+                                $W_string = $_POST['search'];
+                                include_once 'header.php';
+    if(!isset($_SESSION['u_id']))
+    {
+        header("Location: index.php");
+    }
+    include 'includes/dbh.php';
                                 echo '<div class="central-container">
                                 <div class="row">
                                     <div class="col">
@@ -10,8 +17,6 @@
                                 <h1 class="display-4 font-weight-normal">
                                 Worker Search Results
                                 </h1>';
-                                $W_type = $_POST['type'];
-                                $W_string = $_POST['search'];
 
                                 if(empty($W_type) || empty($W_string))
                                 {
@@ -26,7 +31,7 @@
                                     {
                                         header("Location: findWorker.php?find=".$W_type);
                                     }
-                                    echo $result;
+                                    //echo $result;
                                     echo '<table class="center" cellspacing="5" cellpadding="5" ><h4></h4>
 	                                    <col width = "200">
 	                                    <col width = "200">
