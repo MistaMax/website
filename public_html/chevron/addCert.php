@@ -1,9 +1,9 @@
 <?php
-    include_once header.php;
-    #if(!(isset($_SESSION['u_id'])))
-    #{
-    #    header("Location: index.php");
-    #}
+    include_once 'header.php';
+    if(!isset($_SESSION['u_id']))
+    {
+        header("Location: index.php");
+    }
 ?>
 <div class="central-container">
         <div class="row">
@@ -17,5 +17,5 @@
 		</form>
 </div></div></div></div></div>
 <?php
-    include_once footer.php;
+    include_once 'footer.php';
 ?>
