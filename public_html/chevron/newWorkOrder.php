@@ -27,7 +27,9 @@ if(isset($_POST['submit'])){
 				exit();
 			}else {
 				//enter in DB
-				$sql = "INSERT INTO `workorder` (workOrder,facility,equipmentID,priority,timeToComplete) values ('$W_ID','$W_facility','$W_equipmentID','$W_priority','$W_timeToComplete');INSERT INTO order_cert_requirement (certID,workOrder) VALUES ('$W_certReqID','$W_ID');";
+				$sql = "INSERT INTO `workorders` (workOrder,facility,equipmentID,priority,timeToComplete) values ('$W_ID','$W_facility','$W_equipmentID','$W_priority','$W_timeToComplete');";
+                mysqli_query($connection, $sql);
+                $sql="INSERT INTO order_cert_requirement (certID,workOrder) VALUES ('$W_certReqID','$W_ID')";
                 mysqli_query($connection, $sql);
 				header("Location: index.php?Add=success");
 				exit();
