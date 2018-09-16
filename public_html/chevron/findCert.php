@@ -56,7 +56,7 @@
                                 echo '<h1 class="display-4 font-weight-normal">
                                 Find Workers
                                 </h1>
-                                <form class="find-worker-form" action="findWorker.php" method="POST">
+                                <form class="find-worker-form" action="findCert.php" method="POST">
                                 <p class="lead font-weight-normal">
                                 <select name="type">
                                 <option value="certID">Certification ID</option>
