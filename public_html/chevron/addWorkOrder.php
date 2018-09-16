@@ -13,7 +13,6 @@
                     <h1 class="display-4 font-weight-normal">Add Work Order</h1>
                     <form class="worker-form" action="newWorkOrder.php" method="POST">
                     <p class="lead font-weight-normal">Work Order ID:<input class="fancy-input" type="text" name="workOrder" placeholder="Work Order ID"></p>
-                    <p class="lead font-weight-normal">Worker ID:<input class="fancy-input" type="text" name="workerID" placeholder="Worker ID"></p>
                     <p class="lead font-weight-normal">Cert Req ID:<input class="fancy-input" type="text" name="certReqID" placeholder="Cert Req ID"></p>
                     <p class="lead font-weight-normal">Facility:<input class="fancy-input" type="text" name="facility" placeholder="Facility"></p>
                     <p class="lead font-weight-normal">Equipment Type:<input class="fancy-input" type="text" name="equipmentType" placeholder="Equipment Type"></p>

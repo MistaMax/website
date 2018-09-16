@@ -4,7 +4,6 @@ if(isset($_POST['submit'])){
     include_once 'includes/dbh.php';
 	
 	$W_ID = $_POST['workOrder'];
-	$W_WID = $_POST['workerID'];
     $W_certReqID = $_POST['certReqID'];
     $W_facility = $_POST['facility'];
     $W_equipmentType = $_POST['equipmentType'];
@@ -12,7 +11,7 @@ if(isset($_POST['submit'])){
     $W_priority = $_POST['priority'];
     $W_timeToComplete = $_POST['timeToComplete'];
 	//Check if all fields are entered
-	if(empty($W_ID) || empty($W_WID) || empty($W_certReqID) || empty($W_facility) || empty($W_equipmentType) || empty($W_equipmentID) || empty($W_priority) || empty($W_timeToComplete)){
+	if(empty($W_ID) || empty($W_certReqID) || empty($W_facility) || empty($W_equipmentType) || empty($W_equipmentID) || empty($W_priority) || empty($W_timeToComplete)){
 		header("Location: addWorkOrder.php?Add=empty1");
 		exit();
 	}else {
@@ -29,8 +28,10 @@ if(isset($_POST['submit'])){
 				exit();
 			}else {
 				//enter in DB
-				$sql = "INSERT INTO workorder (workOrder,workerID,certReqID,facility,equipmentType,equipmentID,priority,timeToComplete) values ('$W_ID','$W_WID','$W_certReqID','$W_facility','$W_equipmentType','$W_equipmentID','$W_priority','$W_timeToComplete');";
-				mysqli_query($connection, $sql);
+				$sql = "INSERT INTO workorder (workOrder,facility,equipmentType,equipmentID,priority,timeToComplete) values ('$W_ID','$W_facility','$W_equipmentType','$W_equipmentID','$W_priority','$W_timeToComplete');";
+                mysqli_query($connection, $sql);
+                $sql = "INSERT INTO order_cert_requirement (certID,workerID) VALUES ('$W_ID','$W_certReqID');";
+                mysqli_query($connection, $sql);
 				header("Location: index.php?Add=success");
 				exit();
 			}
