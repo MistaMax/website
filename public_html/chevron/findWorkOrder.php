@@ -82,7 +82,7 @@
                                 <p class="lead font-weight-normal">
                                 <input class="fancy-input" type="text" name="search" placeholder="Search">
                                 </p>
-                                <p class="lead font-weight-normal"><button class="fancy-button" type="submit" name="submit">Find Workers</button></p>
+                                <p class="lead font-weight-normal"><button class="fancy-button" type="submit" name="submit">Find Work Orders</button></p>
                                 </form>';
                             }?>
 </div>
