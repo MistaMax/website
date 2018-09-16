@@ -1,5 +1,4 @@
 <?php
-    include_once 'header.php';
     if(!isset($_SESSION['u_id']))
     {
         header("Location: index.php");
@@ -15,6 +14,7 @@
                         <?php
                             if(isset($_POST['submit']))
                             {
+                                include_once 'header.php';
                                 echo '<h1 class="display-4 font-weight-normal">
                                 Worker Search Results
                                 </h1>';
@@ -61,6 +61,7 @@
                             }
                             else
                             {
+                                include_once 'header.php';
                                 echo '<h1 class="display-4 font-weight-normal">
                                 Find Workers
                                 </h1>
