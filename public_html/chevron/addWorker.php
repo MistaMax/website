@@ -10,8 +10,8 @@
             <div class="col">
                 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
 					<div class="col-md-12 p-lg-5 mx-auto my-5">
-                    <h1 class="display-4 font-weight-normal">Add Certification</h1>
-                    <form class="certification-form" action="newWorker.php" method="POST">
+                    <h1 class="display-4 font-weight-normal">Add Worker</h1>
+                    <form class="worker-form" action="newWorker.php" method="POST">
                     <p class="lead font-weight-normal">Worker ID:<input class="fancy-input" type="text" name="workerID" placeholder="Worker ID"></p>
                     <p class="lead font-weight-normal">First Name:<input class="fancy-input" type="text" name="firstName" placeholder="First Name"></p>
                     <p class="lead font-weight-normal">Middle Name:<input class="fancy-input" type="text" name="middleName" placeholder="Middle Name"></p>
