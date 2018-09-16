@@ -40,7 +40,7 @@ session_start();
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="findWorker.php">Find</a>
             <a class="dropdown-item" href="addWorker.php">Add</a>
-            <a class="dropdown-item" href="#">Display</a>
+            <a class="dropdown-item" href="displayWorkers.php">Display</a>
         </div>
         </li>
         <li class="nav-item dropdown">
@@ -50,7 +50,7 @@ session_start();
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="findCert.php">Find</a>
             <a class="dropdown-item" href="addCert.php">Add</a>
-            <a class="dropdown-item" href="#">Display</a>
+            <a class="dropdown-item" href="displayCertifications.php">Display</a>
         </div>
         </li>
         <li class="nav-item dropdown">
@@ -60,7 +60,7 @@ session_start();
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="findWorkOrder.php">Find</a>
             <a class="dropdown-item" href="addWorkOrder.php">Add</a>
-            <a class="dropdown-item" href="#">Display</a>
+            <a class="dropdown-item" href="displayWorkOrders.php">Display</a>
         </div>
         </li>';
     }
