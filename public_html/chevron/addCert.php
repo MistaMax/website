@@ -12,9 +12,9 @@
 					<div class="col-md-12 p-lg-5 mx-auto my-5">
                     <h1 class="display-4 font-weight-normal">Add Certification</h1>
                     <form class="certification-form" action="newCert.php" method="POST">
-                    <p class="lead font-weight-normal">Cert ID:<input class="fancy-input" type="text" name="certID" placeholder="Certification ID"></p>
+                    <p class="lead font-weight-normal">  Cert ID:<input class="fancy-input" type="text" name="certID" placeholder="Certification ID"></p>
                     <p class="lead font-weight-normal">Cert Name:<input class="fancy-input" type="text" name="certName" placeholder="Certification Name"></p>
-                    <p class="lead font-weight-normal"><button class="fancy-button" type="submit" name="submit">Sign In</button></p>
+                    <p class="lead font-weight-normal"><button class="fancy-button" type="submit" name="submit">Add Certification</button></p>
 		</form>
 					</div>
 				</div>
