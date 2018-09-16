@@ -1,20 +1,18 @@
 <?php
+                            if(isset($_POST['submit']))
+                            {
+                                include_once 'header.php';
     if(!isset($_SESSION['u_id']))
     {
         header("Location: index.php");
     }
     include 'includes/dbh.php';
-?>
-
-<div class="central-container">
-        <div class="row">
-            <div class="col">
-                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
-					<div class="col-md-12 p-lg-5 mx-auto my-5">
-                        <?php
-                            if(isset($_POST['submit']))
-                            {
-                                echo '<h1 class="display-4 font-weight-normal">
+                                echo '<div class="central-container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
+                                            <div class="col-md-12 p-lg-5 mx-auto my-5">
+                                <h1 class="display-4 font-weight-normal">
                                 Worker Search Results
                                 </h1>';
                                 $W_type = $_POST['type'];
@@ -60,7 +58,18 @@
                             }
                             else
                             {
-                                echo '<h1 class="display-4 font-weight-normal">
+                                include_once 'header.php';
+    if(!isset($_SESSION['u_id']))
+    {
+        header("Location: index.php");
+    }
+    include 'includes/dbh.php';
+                                echo '<div class="central-container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
+                                            <div class="col-md-12 p-lg-5 mx-auto my-5">
+                                <h1 class="display-4 font-weight-normal">
                                 Find Workers
                                 </h1>
                                 <form class="find-worker-form" action="findWorker.php" method="POST">
