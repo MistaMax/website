@@ -32,7 +32,7 @@
                                     $resultCheck = mysqli_num_rows($result);
                                     if($resultCheck == 0)
                                     {
-                                        header("Location: findWorker.php?find=".$W_type);
+                                        header("Location: findWorker.php?find=none");
                                     }
                                     echo '<table class="center" cellspacing="5" cellpadding="5" ><h4></h4>
 	                                    <col width = "200">
@@ -55,11 +55,14 @@
 		                                    $row['sex'] . '</td><td align="left">';
 		                                    echo '</tr>';
 	                                    }
-	                                    echo '</table>';
+                                        echo '</table>';
+                                        echo '<p class="lead font-weight-normal"><a class="user-name nav-item nav-link" href="findWorker.php">Try another search</a></p>';
                                 }
 
-                            }?>
-                                <h1 class="display-4 font-weight-normal">
+                            }
+                            else
+                            {
+                                echo '<h1 class="display-4 font-weight-normal">
                                 Find Workers
                                 </h1>
                                 <form class="find-worker-form" action="findWorker.php" method="POST">
@@ -75,8 +78,9 @@
                                 <p class="lead font-weight-normal">
                                 <input class="fancy-input" type="text" name="search" placeholder="Search">
                                 </p>
-                                <p class="lead font-weight-normal"><button class="fancy-button" type="submit" name="submit">Find Worker</button></p>
+                                <p class="lead font-weight-normal"><button class="fancy-button" type="submit" name="submit">Find Workers</button></p>
                                 </form>';
+                            }?>
 </div>
 </div>
 </div>
