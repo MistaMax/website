@@ -10,14 +10,17 @@
             <div class="col">
                 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-semilight">
 					<div class="col-md-12 p-lg-5 mx-auto my-5">
-                    <h1 class="display-4 font-weight-normal">Add Worker</h1>
-                    <form class="worker-form" action="newWorker.php" method="POST">
+                    <h1 class="display-4 font-weight-normal">Add Work Order</h1>
+                    <form class="worker-form" action="newWorkOrder.php" method="POST">
+                    <p class="lead font-weight-normal">Work Order ID:<input class="fancy-input" type="text" name="workOrder" placeholder="Work Order ID"></p>
                     <p class="lead font-weight-normal">Worker ID:<input class="fancy-input" type="text" name="workerID" placeholder="Worker ID"></p>
-                    <p class="lead font-weight-normal">First Name:<input class="fancy-input" type="text" name="firstName" placeholder="First Name"></p>
-                    <p class="lead font-weight-normal">Middle Name:<input class="fancy-input" type="text" name="middleName" placeholder="Middle Name"></p>
-                    <p class="lead font-weight-normal">Last Name:<input class="fancy-input" type="text" name="lastName" placeholder="Last Name"></p>
-                    <p class="lead font-weight-normal">Sex(M or F):<input class="fancy-input" type="text" name="sex" placeholder="M or F"></p>
-                    <p class="lead font-weight-normal"><button class="fancy-button" type="submit" name="submit">Add Worker</button></p>
+                    <p class="lead font-weight-normal">Cert Req ID:<input class="fancy-input" type="text" name="certReqID" placeholder="Cert Req ID"></p>
+                    <p class="lead font-weight-normal">Facility:<input class="fancy-input" type="text" name="facility" placeholder="Facility"></p>
+                    <p class="lead font-weight-normal">Equipment Type:<input class="fancy-input" type="text" name="equipmentType" placeholder="Equipment Type"></p>
+                    <p class="lead font-weight-normal">Equipment ID:<input class="fancy-input" type="text" name="equipmentID" placeholder="Equipment ID"></p>
+                    <p class="lead font-weight-normal">Priority(1-5):<input class="fancy-input" type="text" name="priority" placeholder="Priority"></p>
+                    <p class="lead font-weight-normal">Time to Complete:<input class="fancy-input" type="text" name="timeToComplete" placeholder="timeToComplete"></p>
+                    <p class="lead font-weight-normal"><button class="fancy-button" type="submit" name="submit">Add Work Order</button></p>
 		</form>
 					</div>
 				</div>
