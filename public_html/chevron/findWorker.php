@@ -3,11 +3,7 @@
                             {
                                 $W_type = $_POST['type'];
                                 $W_string = $_POST['search'];
-                                include_once 'header.php';
-    if(!isset($_SESSION['u_id']))
-    {
-        header("Location: index.php");
-    }
+
     include 'includes/dbh.php';
                                 echo '<div class="central-container">
                                 <div class="row">
