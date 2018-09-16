@@ -1,6 +1,8 @@
 <?php
                             if(isset($_POST['submit']))
                             {
+                                $W_type = $_POST['type'];
+                                $W_string = $_POST['search'];
                                 include_once 'header.php';
     if(!isset($_SESSION['u_id']))
     {
@@ -15,8 +17,6 @@
                                 <h1 class="display-4 font-weight-normal">
                                 Worker Search Results
                                 </h1>';
-                                $W_type = $_POST['type'];
-                                $W_string = $_POST['search'];
 
                                 if(empty($W_type) || empty($W_string))
                                 {
