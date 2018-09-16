@@ -32,7 +32,7 @@
                                     $resultCheck = mysqli_num_rows($result);
                                     if($resultCheck == 0)
                                     {
-                                        header("Location: findWorker.php?find=none");
+                                        header("Location: findWorker.php?find=".$W_type);
                                     }
                                     echo '<table class="center" cellspacing="5" cellpadding="5" ><h4></h4>
 	                                    <col width = "200">
