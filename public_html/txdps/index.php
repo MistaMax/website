@@ -12,7 +12,7 @@
         crossorigin="anonymous">
     <!--<link rel="stylesheet" href="../style/style.css">-->
     <title>TxDPS</title>
-    <link rel="shortcut icon" type="dpslogo.png" href="indexOld.html" />
+    <link rel="shortcut icon" type="dpslogo.png" href="index.php" />
     <!--<link rel="stylesheet" type="text/css" href="style.css">-->
 
 <style>
@@ -38,7 +38,7 @@
     <basefont face = "serif, Times New Roman" size = "2" color = "black">
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-<a class="navbar-brand" href="indexOld.html">
+<a class="navbar-brand" href="index.php">
     <img src="dpslogo.png" id="logo-badge" width="50" height="50" hspace="10px">Texas Department of Public Safety</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
     aria-expanded="false" aria-label="Toggle navigation">
